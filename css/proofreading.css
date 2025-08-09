@@ -1,18 +1,17 @@
-/* Root Variables Scope */
+
 :root {
-  --bg-gradient-start: #1E3A8A;
+  --bg-gradient-start: #4169e1;
   --bg-gradient-end: #14B8A6;
-  --ebc-light: #F9FAFB;
+  --benaan-light: #F9FAFB;
   --light-teal: #6EC4BA;
-  --secondary-teal: #14B8A6;
-  --ebc-blue: #1E3A8A;
+  --benaan-teal: #14B8A6;
+  --benaan-blue: #4169e1;
   --text-gray: #6B7280;
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --transition-normal: all 0.4s ease;
+  --separator-color: rgba(20, 184, 166, 0.2);
 }
-
-/* Body Scope */
 body {
   font-family: 'Tajawal', sans-serif;
   background: #fff;
@@ -24,7 +23,6 @@ body {
   text-align: right;
 }
 
-/* Header Scope */
 .header {
   background: linear-gradient(45deg, var(--bg-gradient-start), var(--bg-gradient-end));
   padding: 2rem 2rem;
@@ -42,7 +40,6 @@ body {
   animation: bounceIn 1.5s ease-out;
 }
 
-/* Hero Section Scope */
 .service-hero {
   display: flex;
   align-items: center;
@@ -50,11 +47,10 @@ body {
   padding: 4rem 2rem;
   background: #fff;
   border-radius: 0 0 20px 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.6px;
   position: relative;
   overflow: hidden;
   direction: rtl;
-  margin-top: 100px !important;
 
 }
 
@@ -105,7 +101,7 @@ body {
 
 .service-hero-content h1 {
   font-size: 2.8rem;
-  color: var(--ebc-blue);
+  color: var(--benaan-blue);
   margin-bottom: 1rem;
   animation: fadeInUp 1s ease-out;
 }
@@ -118,6 +114,8 @@ body {
 
 /* Button Styles Scope */
 .btn {
+    background: linear-gradient(45deg, var(--benaan-teal), var(--benaan-blue));
+
   display: inline-block;
   padding: 12px 25px;
   font-size: 1.1rem;
@@ -166,10 +164,13 @@ body {
 
 .service-description h2 {
   text-align: center;
+  color: var(--benaan-blue);
 }
 
 .service-description p {
   text-align: center;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .services-grid {
@@ -194,7 +195,7 @@ body {
 
 .service-icon {
   font-size: 2rem;
-  color: #14B8A6;
+  color: var(--benaan-blue);
   margin-bottom: 1rem;
 }
 
@@ -269,13 +270,13 @@ body {
 
 .feature-icon {
   font-size: 2.5rem;
-  color: #2DD4BF;
+  color: var(--benaan-blue);
   margin-bottom: 1rem;
   transition: color 0.3s ease;
 }
 
 .feature:hover .feature-icon {
-  color: #065F46;
+  color: var(--light-teal);
 }
 
 .feature-content h3 {
@@ -352,7 +353,7 @@ body {
 
 /* Call to Action Scope */
 .cta {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: #14B8A6;
   color: #fff;
   text-align: center;
@@ -362,11 +363,15 @@ body {
 .cta h2 {
   color: #fff;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .cta p {
-  max-width: 600px;
   margin: 0 auto 1.5rem;
+  width: 100%;
+}
+.cta a{
+  background-color: var(--benaan-blue) !important;
 }
 
 /* Animations Scope */
@@ -438,4 +443,8 @@ body {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
+}
+
+.container{
+  justify-content: center !important;
 }

@@ -288,7 +288,6 @@ body {
   text-decoration: none;
 }
 
-/* Call to Action Scope */
 .cta {
   padding: 2rem 0;
   background-color: #14B8A6;
@@ -310,7 +309,6 @@ body {
   background-color: var(--benaan-blue);
 }
 
-/* Animations Scope */
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.1); }
