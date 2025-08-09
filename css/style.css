@@ -229,7 +229,7 @@ main {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
-  background: linear-gradient(45deg, var(--benaan-teal), var(--benaan-blue));
+  background: var(--benaan-light);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -253,7 +253,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: linear-gradient(45deg, var(--benaan-teal), var(--benaan-blue));
+  background: var(--benaan-light);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -584,7 +584,7 @@ main {
 }
 .feature-area {
   padding: 4rem 0;
-  background-color: #F9FAFB; /* Light background for contrast */
+  background-color: #F9FAFB;
   opacity: 0;
   animation: fade-in-section 1s ease-out forwards 0.2s;
   .container {
