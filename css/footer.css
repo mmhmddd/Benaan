@@ -1,5 +1,5 @@
         :root {
-            --benaan-blue: #1E3A8A;
+            --benaan-blue: #4169e1 ;
             --benaan-teal: #14B8A6;
             --benaan-gold: #F59E0B;
             --benaan-gray: #6B7280;
@@ -118,6 +118,7 @@
             margin-bottom: 1rem;
             a{
                  text-decoration: none !important;
+                 color: var(--benaan-whiteq);
 
             }
 
@@ -164,7 +165,7 @@
         .footer-bottom {
             text-align: center;
             padding-top: 2rem;
-            border-top: 1px solid var(--benaan-teal); /* Changed to teal for border */
+            border-top: 1px solid var(--benaan-teal); 
             margin-top: 2.5rem;
             width: 100%;
         }
@@ -175,7 +176,7 @@
         }
 
         .year {
-            color: var(--benaan-teal); /* Changed to teal for year */
+            color: var(--benaan-teal); 
             font-weight: 600;
         }
 

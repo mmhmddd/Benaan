@@ -4,7 +4,7 @@
   --benaan-light: #F9FAFB;
   --light-teal: #6EC4BA;
   --secondary-teal: #14B8A6;
-  --benaan-blue: #1E3A8A;
+  --benaan-blue: #4169e1;
   --text-gray: #6B7280;
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -67,7 +67,7 @@
 .hero-section .slider-item h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: var(--bg-gradient-end);
+  color: var(--benaan-blue);
 }
 
 .hero-section .slider-item p {
