@@ -113,7 +113,6 @@
 @media (max-width: 768px) {
   .hero-section {
     min-height: 400px;
-    margin-top: 90px !important;
   }
 
   .hero-section .hero-slider {

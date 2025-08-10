@@ -58,6 +58,7 @@ body {
     text-decoration: none;
     transition: var(--transition-normal);
     z-index: 1001;
+        margin-right: 221px;
 }
 
 .navbar-brand img {
@@ -230,6 +231,10 @@ body {
     padding: 0;
     background: none;
     z-index: 1001;
+    position: absolute;
+    top: 50%;
+    right: 3rem !important; /* distance from right edge */
+    transform: translateY(-50%); /* perfect vertical centering */
 }
 
 .navbar-toggler-icon {

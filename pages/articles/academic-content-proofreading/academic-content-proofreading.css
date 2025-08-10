@@ -40,7 +40,6 @@ body {
       overflow: hidden;
       min-height: 300px;
       border-bottom: 4px solid var(--accent-color);
-      margin-top: 5.5rem;
     }
 
     /* Static Title */

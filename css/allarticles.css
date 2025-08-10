@@ -2,10 +2,10 @@
 :root {
   --bg-gradient-start: #1E3A8A;
   --bg-gradient-end: #14B8A6;
-  --ebc-light: #F9FAFB;
+  --primary-light: #F9FAFB;
   --light-teal: #6EC4BA;
   --secondary-teal: #14B8A6;
-  --ebc-blue: #1E3A8A;
+  --primary-blue: #1E3A8A;
   --text-gray: #6B7280;
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -15,19 +15,19 @@
   --border-radius: 12px;
   --image-border: 4px solid var(--light-teal);
   --glow-effect: 0 0 10px rgba(20, 184, 166, 0.6);
-  --carousel-height: 500px;
+  --carousel-height: 600px; /* Increased for better image visibility */
 }
 
 /* ===== 2. الأنماط الأساسية ===== */
 body {
   font-family: 'Tajawal', sans-serif;
-  background: var(--ebc-light);
+  background: var(--primary-light);
   margin: 0;
   padding: 0;
   color: var(--text-gray);
   line-height: 1.7;
   position: relative;
-  overflow-x: hidden; /* Prevent horizontal overflow from shapes */
+  overflow-x: hidden;
 }
 
 body::before {
@@ -37,7 +37,7 @@ body::before {
   left: 0;
   width: 200px;
   height: 200px;
-  background: rgba(30, 58, 138, 0.1); /* Light blue with opacity */
+  background: rgba(30, 58, 138, 0.1);
   border-radius: 50%;
   z-index: -1;
   animation: float 15s infinite ease-in-out;
@@ -50,7 +50,7 @@ body::after {
   right: 0;
   width: 150px;
   height: 150px;
-  background: rgba(20, 184, 166, 0.1); /* Light teal with opacity */
+  background: rgba(20, 184, 166, 0.1);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   z-index: -1;
   animation: float 12s infinite ease-in-out reverse;
@@ -65,12 +65,15 @@ body::after {
 /* ===== 3. تصميم السلايدر ===== */
 .article-slider {
   position: relative;
-  margin-bottom: var(--spacing-unit) * 2;
+  margin-bottom: calc(var(--spacing-unit) * 2);
   overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-lg);
 }
 
 #articleCarousel {
   height: var(--carousel-height);
+  background: var(--primary-light);
 }
 
 .carousel-inner {
@@ -81,82 +84,173 @@ body::after {
   height: 100%;
   position: relative;
   overflow: hidden;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth slide transitions */
 }
 
 .carousel-item img {
-  width: 800%;
+  width: 100%;
   height: 100%;
+  object-fit: cover; /* Ensure images scale properly without distortion */
+  object-position: center;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom on hover */
+}
+
+.carousel-item:hover img {
+  transform: scale(1.05); /* Subtle zoom effect on hover */
 }
 
 .carousel-caption {
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   left: 5%;
   right: 5%;
   z-index: 1;
   color: #fff;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  padding: var(--spacing-unit);
+  background: rgba(0, 0, 0, 0.7); /* Slightly darker for better readability */
+  padding: calc(var(--spacing-unit) * 1.5);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
   transition: var(--transition-normal);
-
 }
 
 .carousel-item:hover .carousel-caption {
-  background: rgba(0, 0, 0, 0.8);
-  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.85);
+  transform: translateY(-5px); /* Subtle lift on hover */
 }
 
 .carousel-caption h5 {
-  font-size: 2.5rem;
+  font-size: 2rem; /* Slightly smaller for balance */
   font-weight: 700;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .carousel-caption p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.article-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--secondary-teal);
+  color: #fff;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition-normal);
+}
+
+.article-btn:hover {
+  background: var(--primary-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--glow-effect);
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 5%;
-  opacity: 0.7;
-  transition: opacity var(--transition-normal);
-  justify-content: space-between;
+  width: 8%; /* Slightly wider for easier clicking */
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.2); /* Subtle background for controls */
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: var(--secondary-teal);
   border-radius: 50%;
-  padding: 1rem;
+  padding: 1.2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.carousel-indicators {
+  bottom: 10px;
 }
 
 .carousel-indicators [data-bs-target] {
   background-color: var(--light-teal);
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  opacity: 0.5;
-  transition: opacity var(--transition-normal);
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .carousel-indicators .active {
   opacity: 1;
   background-color: var(--secondary-teal);
+  transform: scale(1.2); /* Slightly larger active indicator */
+}
+
+/* ===== 4. التصميم التجاوبي ===== */
+@media (max-width: 768px) {
+  :root {
+    --carousel-height: 400px; /* Smaller height for mobile */
+  }
+
+  .carousel-caption {
+    bottom: 10%;
+    padding: var(--spacing-unit);
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  .article-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --carousel-height: 300px;
+  }
+
+  .carousel-caption {
+    bottom: 5%;
+    padding: 0.75rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .article-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
 }
 
 /* ===== 4. قسم أبرز المقالات ===== */
@@ -201,14 +295,15 @@ body::after {
   background: #f9fafb;
   padding: 1.5rem;
   box-shadow: var(--ebc-blue);
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
   height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .featured-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-lg);
 }
+
 
 .featured-image img {
   width: 100%;
@@ -236,7 +331,6 @@ body::after {
   line-height: 1.6;
   margin-bottom: 1rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -430,7 +524,6 @@ body::after {
   line-height: 1.6;
   margin-bottom: 1.5rem;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -621,3 +714,4 @@ body::after {
   padding: 0 2px;
   border-radius: 3px;
 }
+

@@ -268,7 +268,6 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 25px;
-  transition: var(--transition-normal);
   will-change: transform, background;
   text-align: center;
   width: 48%;
