@@ -58,7 +58,6 @@ body {
     text-decoration: none;
     transition: var(--transition-normal);
     z-index: 1001;
-        margin-right: 221px;
 }
 
 .navbar-brand img {
@@ -304,6 +303,14 @@ body {
         text-align: right;
         border-radius: 10px;
     }
+    .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: var(--transition-normal);
+    z-index: 1001;
+        margin-right: 221px;
+}
 
     .dropdown-menu {
         position: static;
