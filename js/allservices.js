@@ -67,3 +67,28 @@
             sliderTrack.offsetHeight; // Trigger reflow
             sliderTrack.style.animation = `slide ${currentSpeed}s linear infinite`;
         });
+
+
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+  fetch('../../shared/navbar/navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-placeholder').innerHTML = data;
+      // Reinitialize navbar scripts here
+      initializeNavbar(); // Custom function to set up event listeners
+    })
+    .catch(error => console.error('خطأ في تحميل الناف بار:', error));
+});
+
+function initializeNavbar() {
+  // Example: Reattach event listeners for navbar toggle
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+  if (navbarToggler && navbarCollapse) {
+    navbarToggler.addEventListener('click', () => {
+      navbarCollapse.classList.toggle('show');
+    });
+  }
+}

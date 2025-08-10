@@ -449,6 +449,16 @@ body {
   .contact-hero h1 {
     font-size: 2rem;
   }
+  .contact-details .row {
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  }
+
+  .contact-details .col-4 {
+    flex: 0 0 100%; /* Each card takes full width */
+    max-width: 100%; /* Ensure full width */
+    padding: 0 15px; /* Maintain consistent padding */
+    margin-bottom: 1rem; /* Add spacing between stacked cards */
+  }
 
   .contact-hero p {
     font-size: 1rem;
