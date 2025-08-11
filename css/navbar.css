@@ -170,7 +170,7 @@ body {
     border: none;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    min-width: 280px;
+    min-width: 320px;
     padding: 0.5rem;
     opacity: 0;
     visibility: hidden;
@@ -340,7 +340,6 @@ body {
     }
 }
 
-/* تصميم متجاوب - التابلت */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .nav-link {
         font-size: 0.95rem;
@@ -356,14 +355,12 @@ body {
     }
 }
 
-/* تصميم متجاوب - الشاشات الكبيرة */
 @media (min-width: 1200px) {
     .container {
         max-width: 1200px;
     }
 }
 
-/* المحتوى التجريبي */
 .demo-content {
     padding: 2rem;
     text-align: center;
