@@ -67,22 +67,11 @@ main {
   z-index: 2;
 }
 
-.hero-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.hero-text-col, .hero-image-col {
-  display: flex;
-  align-items: center;
-}
-
 .hero-text {
   padding: 1.5rem;
   text-align: right;
   flex: 1;
+  max-width: 100%;
 }
 
 .hero-subtitle {
@@ -105,6 +94,7 @@ main {
   margin-bottom: 1.5rem;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
 }
 
 .hero-description {
@@ -112,6 +102,7 @@ main {
   color: var(--benaan-light);
   margin-bottom: 2rem;
   line-height: 1.6;
+  max-width: 100%;
 }
 
 .hero-buttons {
@@ -305,55 +296,47 @@ main {
     transform: translateY(0);
   }
 }
+
 @media (max-width: 768px) {
   .hero {
     padding: 2rem 0;
     min-height: 80vh;
   }
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-text-col, .hero-image-col {
-    width: 100%;
-    justify-content: center;
-  }
   .hero-text {
-    padding: 0.5rem 0; /* Reduce padding to allow more width */
+    padding: 0.5rem;
     text-align: center;
-    max-width: 95%; /* Increase width for text container */
-    margin: 0 auto; /* Center the text */
+    max-width: 100%;
+    margin: 0 auto;
   }
   .hero-subtitle {
     font-size: 1rem;
-    text-align: center !important;
     letter-spacing: 1px;
     margin-bottom: 0.8rem;
-    max-width: 100%; /* Allow subtitle to use full available width */
+    max-width: 100%;
   }
   .hero-title {
     font-size: 2.5rem;
     line-height: 1.3;
     margin-bottom: 1rem;
     word-wrap: break-word;
-    max-width: 100%; /* Ensure title spans full width */
+    max-width: 100%;
   }
   .hero-description {
     font-size: 1.1rem;
     line-height: 1.5;
-    max-width: 95%; /* Increase width for description */
+    max-width: 100%;
     margin: 0 auto 1.5rem;
   }
   .hero-buttons {
     justify-content: center;
-    flex-direction: row; /* Keep buttons in a row */
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
   }
   #btn-services, .btn-secondary {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
-    width: 140px; /* Equal size for buttons */
+    width: 140px;
     text-align: center;
   }
   .hero-logo-wrapper {
@@ -363,7 +346,7 @@ main {
     max-width: 60%;
   }
   .service-cards {
-    display: none; /* Already correct, retained for clarity */
+    display: none;
   }
 }
 
@@ -373,20 +356,20 @@ main {
     min-height: 70vh;
   }
   .hero-text {
-    padding: 0.5rem 0; /* Minimize padding */
-    max-width: 98%; /* Maximize text width */
+    padding: 0.5rem;
+    max-width: 100%;
     margin: 0 auto;
   }
   .hero-title {
     font-size: 2rem;
     line-height: 1.3;
     word-wrap: break-word;
-    max-width: 100%; /* Full width */
+    max-width: 100%;
   }
   .hero-description {
     font-size: 1rem;
     line-height: 1.4;
-    max-width: 98%; /* Maximize width */
+    max-width: 100%;
     margin: 0 auto 1.2rem;
   }
   .hero-subtitle {
@@ -401,7 +384,7 @@ main {
   #btn-services, .btn-secondary {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
-    width: 120px; /* Equal size */
+    width: 120px;
   }
   .hero-logo {
     max-width: 50%;
@@ -410,8 +393,8 @@ main {
 
 @media (max-width: 360px) {
   .hero-text {
-    padding: 0.3rem 0; /* Further reduce padding */
-    max-width: 100%; /* Use full width */
+    padding: 0.3rem;
+    max-width: 100%;
   }
   .hero-title {
     font-size: 1.8rem;
@@ -421,7 +404,7 @@ main {
   .hero-description {
     font-size: 0.95rem;
     line-height: 1.3;
-    max-width: 100%; /* Full width */
+    max-width: 100%;
     margin: 0 auto 1rem;
   }
   .hero-subtitle {
@@ -442,31 +425,29 @@ main {
     max-width: 45%;
   }
 }
-/* Universal smooth hover for all hoverable elements */
+
 *:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/* Feature area styles */
 .feature-area {
   padding: 4rem 0;
   background-color: #F9FAFB;
   opacity: 0;
   animation: fade-in-section 1s ease-out forwards 0.2s;
 }
+
 .feature-area .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
-.feature-header {
-  margin-bottom: 3rem;
-}
+
 
 .feature-main-title {
   position: relative;
@@ -497,13 +478,20 @@ main {
   font-size: 1.125rem;
   color: var(--benaan-gray);
   text-align: center;
-  margin-bottom: 1.5rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   opacity: 0;
   animation: fade-in-opposite 0.8s ease-out 0.6s forwards;
   padding: 0.75rem 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  justify-items: center;
 }
 
 .feature-item {
@@ -517,6 +505,8 @@ main {
   height: 25rem;
   display: flex;
   flex-direction: column;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .feature-item:hover {
@@ -574,8 +564,7 @@ main {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--benaan-blue);
-  margin-bottom: 1.1rem;
-  height: 25px;
+  line-height: 1.3;
 }
 
 .feature-body .feature-text {
@@ -619,14 +608,6 @@ main {
   transform: translateY(-2px);
 }
 
-/* Grid layout for cards */
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
-}
-
-/* Animations */
 @keyframes fade-in-section {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -647,16 +628,17 @@ main {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1200px) {
   .feature-grid {
-    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    justify-items: center;
   }
 }
 
 @media (max-width: 992px) {
   .feature-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    justify-items: center;
   }
 }
 
@@ -675,21 +657,24 @@ main {
 
   .feature-header .feature-sub-title {
     font-size: 1rem;
-    padding: 15px;
+    padding: 0.5rem;
+    max-width: 90%;
   }
 
   .feature-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-    gap: 1.5rem;
-    justify-content: center; /* Center items when fewer than 2 cards in a row */
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-items: center;
   }
 
   .feature-item {
-    margin-bottom: 2rem;
+    height: auto;
+    min-height: 22rem;
+    max-width: 100%;
   }
 
   .feature-image img {
-    height: 150px;
+    height: 140px;
   }
 
   .feature-body .feature-title {
@@ -697,6 +682,12 @@ main {
   }
 
   .feature-body .feature-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .feature-body .feature-btn {
+    padding: 0.4rem 1rem;
     font-size: 0.9rem;
   }
 }
@@ -712,22 +703,27 @@ main {
 
   .feature-header .feature-sub-title {
     font-size: 0.9rem;
-    padding: 10px;
+    padding: 0.5rem;
+    max-width: 95%;
   }
 
   .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-    gap: 1rem; /* Reduced gap for smaller screens */
-    justify-content: center; /* Center items when fewer than 2 cards in a row */
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 0.8rem;
+    justify-items: center;
   }
 
   .feature-item {
-    margin-bottom: 1.5rem;
+    min-height: 20rem;
+    max-width: 100%;
   }
 
   .feature-image img {
     height: 120px;
+  }
+
+  .feature-body {
+    padding: 1rem;
   }
 
   .feature-body .feature-title {
@@ -736,11 +732,46 @@ main {
 
   .feature-body .feature-text {
     font-size: 0.85rem;
+    line-height: 1.3;
   }
 
   .feature-body .feature-btn {
-    padding: 0.4rem 1rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .btn-all-services {
+    padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 0.5rem;
+    justify-items: center;
+  }
+
+  .feature-item {
+    min-height: 18rem;
+  }
+
+  .feature-image img {
+    height: 100px;
+  }
+
+  .feature-body .feature-title {
+    font-size: 0.9rem;
+  }
+
+  .feature-body .feature-text {
+    font-size: 0.8rem;
+  }
+
+  .feature-body .feature-btn {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1176,13 +1207,15 @@ main {
 
   .nav-prev {
     left: 0;
+    width: 50px;
   }
 
   .nav-next {
     right: 0;
+        width: 50px;
+
   }
 }
-/* Universal smooth hover for blog area */
 .benaan-blog-area *:hover {
   transition: all 0.3s ease-in-out;
 }

@@ -309,7 +309,7 @@ body {
     text-decoration: none;
     transition: var(--transition-normal);
     z-index: 1001;
-        margin-right: 221px;
+    margin-right: 10rem;
 }
 
     .dropdown-menu {
@@ -350,6 +350,9 @@ body {
     .benaan-contact-btn {
         padding: 0.6rem 1.2rem;
         font-size: 0.85rem;
+    }
+    .navbar-brand {
+    margin-right: 7rem;
     }
 }
 
