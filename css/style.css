@@ -40,7 +40,6 @@ main {
 
 .hero {
   position: relative;
-  background-image: url('/assets/images/home/heroimg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
