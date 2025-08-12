@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# مكان ملف الخريطة
+Sitemap: https://www.benaan.com/sitemap.xml

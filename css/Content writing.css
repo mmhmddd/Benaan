@@ -451,3 +451,16 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.btn-article{
+    background: var(--light-teal);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  color: #F9FAFB;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 15px;
+  transition: 0.3ms ease-in-out;
+  &:hover{
+    background-color: #1E3A8A;
+  }
+}

@@ -224,7 +224,6 @@ body {
     font-size: 0.85rem;
 }
 
-/* زر الهامبرجر */
 .navbar-toggler {
     border: none;
     padding: 0;
@@ -232,8 +231,8 @@ body {
     z-index: 1001;
     position: absolute;
     top: 50%;
-    right: 3rem !important; /* distance from right edge */
-    transform: translateY(-50%); /* perfect vertical centering */
+    right: 3rem !important;
+    transform: translateY(-50%); 
 }
 
 .navbar-toggler-icon {
@@ -242,7 +241,7 @@ body {
     position: relative;
     display: block;
     cursor: pointer;
-    background: none; /* Remove Bootstrap's default icon */
+    background: none; 
 }
 
 .navbar-toggler-icon::before,
@@ -271,7 +270,6 @@ body {
 
 
 
-/* تصميم متجاوب - الهاتف المحمول */
 @media (max-width: 991.98px) {
     .navbar-collapse {
         position: absolute;
