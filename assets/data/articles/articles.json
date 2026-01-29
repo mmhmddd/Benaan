@@ -1,0 +1,202 @@
+[
+  {
+    "title": "أساسيات التحليل الإحصائي",
+    "category": "التحليل الإحصائي",
+    "content": "تعرف على أساسيات التحليل الإحصائي لجمع وتفسير البيانات. يشمل أنواع البيانات، مقاييس النزعة المركزية والتشتت، والعلاقات بين المتغيرات. استخدام الاختبارات الإحصائية يضمن استنتاجات دقيقة وموثوقة لاتخاذ قرارات علمية وعملية بثقة.",
+    "image": "/assets/images/article/article7.webp",
+    "link": "#",
+    "slug": "/pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html"
+  },
+  {
+    "title": "تحليل الإحصائي للبيانات الكبيرة",
+    "category": "التحليل الإحصائي",
+    "content": "استكشف الأساليب الإحصائية لتحليل البيانات الكبيرة بدقة وكفاءة. تعرف على تقنيات معالجة البيانات الضخمة لاستخلاص رؤى قيمة تدعم اتخاذ القرارات العلمية والعملية، مما يعزز الأداء في المشاريع البحثية والتطبيقات المهنية.",
+    "image": "/assets/images/article/article14.webp",
+    "link": "#",
+    "slug": "/pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html"
+  },
+  {
+    "title": "أخطاء شائعة في التحليل الإحصائي",
+    "category": "التحليل الإحصائي",
+    "content": "تعرف على الأخطاء الشائعة في التحليل الإحصائي وكيفية تجنبها. يشمل ذلك اختيار الاختبارات المناسبة، تفسير البيانات بدقة، وضمان صحة النتائج. تحسين المنهجية يضمن استنتاجات موثوقة تدعم القرارات العلمية والعملية بفعالية.",
+    "image": "/assets/images/article/article9.webp",
+    "link": "#",
+    "slug": "/pages/articles/common-errors-in-statistical-analysis/common-errors-in-statistical-analysis.html"
+  },
+  {
+    "title": "أفضل ممارسات لتقنيات تصور البيانات",
+    "category": "التحليل الإحصائي",
+    "content": "تعرف على أفضل الممارسات لتصور البيانات بفعالية في التحليل الإحصائي. استخدام الرسوم البيانية والجداول المناسبة يوضح الرؤى، يسهل فهم البيانات، ويعزز اتخاذ القرارات بدقة من خلال تقديم المعلومات بشكل جذاب.",
+    "image": "/assets/images/article/article10.webp",
+    "link": "#",
+    "slug": "/pages/articles/data-visualization-techniques-best-practices/data-visualization-techniques-best-practices.html"
+  },
+  {
+    "title": "نماذج الانحدار المتعدد في الدراسات الاقتصادية",
+    "category": "التحليل الإحصائي",
+    "content": "تعرف على تطبيق نماذج الانحدار المتعدد في الأبحاث الاقتصادية. تحليل العلاقات بين المتغيرات يساعد في فهم الاتجاهات الاقتصادية، مما يدعم اتخاذ القرارات بدقة ويعزز جودة الدراسات الاقتصادية من خلال استنتاجات موثوقة.",
+    "image": "/assets/images/article/article11.webp",
+    "link": "#",
+    "slug": "/pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html"
+  },
+  {
+    "title": "التحليل الإحصائي في اتخاذ القرارات الاستراتيجية",
+    "category": "التحليل الإحصائي",
+    "content": "استخدم التحليل الإحصائي لدعم القرارات الاستراتيجية في الأعمال. تحليل البيانات بدقة يوفر رؤى قيمة، يعزز التخطيط، ويحسن الأداء. الإحصائيات تمكن الشركات من اتخاذ قرارات مستنيرة تعزز التنافسية والنمو بكفاءة عالية.",
+    "image": "/assets/images/article/article12.webp",
+    "link": "#",
+    "slug": "/pages/articles/statistical-analysis-in-strategic-decision-making/statistical-analysis-in-strategic-decision-making.html"
+  },
+  {
+    "title": "استخدام برمجيات الإحصاء SPSS وR وPython",
+    "category": "التحليل الإحصائي",
+    "content": "دليل لاستخدام SPSS وR وPython في التحليل الإحصائي. تعرف على كيفية معالجة البيانات، إجراء الاختبارات، وتصور النتائج بكفاءة، مما يعزز دقة التحليل ويدعم اتخاذ القرارات العلمية والعملية بسهولة وفعالية.",
+    "image": "/assets/images/article/article13.webp",
+    "link": "#",
+    "slug": "/pages/articles/using-statistical-software-spss-r-python/using-statistical-software-spss-r-python.html"
+  },
+  {
+    "title": "تخصيص التدريب للصناعات",
+    "category": "حزم التدريب",
+    "content": "تعرف على كيفية تخصيص برامج التدريب لتلبية احتياجات الصناعات المحددة. تصميم الحزم حسب متطلبات القطاع يعزز الكفاءة، يحسن الأداء، ويدعم تحقيق الأهداف المهنية بفعالية، مما يضمن تجربة تدريبية ملائمة ومؤثرة.",
+    "image": "/assets/images/article/article14.webp",
+    "link": "#",
+    "slug": "/pages/articles/customizing-training-for-industries/customizing-training-for-industries.html"
+  },
+  {
+    "title": "الترجمة الآلية مقابل الترجمة البشرية",
+    "category": "الترجمة",
+    "content": "قارن بين الترجمة الآلية والبشرية. الآلية توفر السرعة لكن تفتقر للدقة الثقافية، بينما البشرية تضمن الدقة والحساسية السياقية. فهم المزايا والعيوب يساعد في اختيار الأنسب لاحتياجات الترجمة المحددة.",
+    "image": "/assets/images/article/article23.webp",
+    "link": "#",
+    "slug": "/pages/articles/machine-vs-human-translation/machine-vs-human-translation.html"
+  },
+  {
+    "title": "تقنيات التدقيق اللغوي المتقدمة",
+    "category": "التدقيق اللغوي",
+    "content": "استكشف تقنيات التدقيق اللغوي المتقدمة باستخدام أدوات ذكية لتحسين جودة النصوص. تعلم استراتيجيات احترافية لاكتشاف الأخطاء النحوية والإملائية، مما يضمن محتوى لغوي دقيق يلبي أعلى المعايير الأكاديمية والمهنية بكفاءة عالية.",
+    "image": "/assets/images/article/article2.webp",
+    "link": "#",
+    "slug": "/pages/articles/advanced-proofreading-techniques/advanced-proofreading-techniques.html"
+  },
+  {
+    "title": "تصميم حزم تدريب فعالة",
+    "category": "حزم التدريب",
+    "content": "تعرف على خطوات تصميم حزم تدريبية فعالة ومؤثرة. التركيز على الأهداف، تنظيم المحتوى، واستخدام أساليب تدريبية جذابة يضمن تحقيق نتائج ملموسة، مما يعزز مهارات المشاركين ويدعم التطوير المهني بكفاءة عالية.",
+    "image": "/assets/images/article/article15.webp",
+    "link": "#",
+    "slug": "/pages/articles/designing-effective-training-packages/designing-effective-training-packages.html"
+  },
+  {
+    "title": "أهمية الترجمة المعتمدة",
+    "category": "الترجمة",
+    "content": "تعرف على أهمية الترجمة المعتمدة للوثائق الرسمية. الدقة والمصداقية في ترجمة المستندات القانونية والإدارية تضمن الامتثال للمتطلبات الرسمية، مما يعزز الثقة ويدعم الاستخدام في السياقات الرسمية بكفاءة عالية.",
+    "image": "/assets/images/article/article20.webp",
+    "link": "#",
+    "slug": "/pages/articles/importance-of-certified-translation/importance-of-certified-translation.html"
+  },
+  {
+    "title": "أساسيات التدقيق اللغوي",
+    "category": "التدقيق اللغوي",
+    "content": "دليل للمبتدئين يوضح أساسيات التدقيق اللغوي، يشمل قواعد النحو والإملاء، تقنيات مراجعة النصوص، وتحسين الأسلوب باستخدام أدوات مساعدة لضمان محتوى دقيق وواضح خالٍ من الأخطاء، مما يعزز جودة النصوص بشكل فعال.",
+    "image": "/assets/images/services/services4.webp",
+    "link": "#",
+    "slug": "/pages/articles/basics-of-proofreading/basics-of-proofreading.html"
+  },
+  {
+    "title": "حزم تدريبية فعالة",
+    "category": "حزم التدريب",
+    "content": "تعرف على المبادئ الأساسية لتصميم مواد تدريبية ناجحة. تنظيم المحتوى، تحديد الأهداف، واستخدام أساليب تفاعلية يعزز فعالية التدريب، مما يحسن مهارات المشاركين ويدعم تحقيق الأهداف المهنية بكفاءة وتأثير قوي.",
+    "image": "/assets/images/article/article16.webp",
+    "link": "#",
+    "slug": "/pages/articles/effective-training-package-design/effective-training-package-design.html"
+  },
+  {
+    "title": "تحديات الترجمة القانونية",
+    "category": "الترجمة",
+    "content": "استكشف تحديات ترجمة النصوص القانونية بدقة. التأكد من المصطلحات القانونية، الامتثال للمعايير، والحفاظ على المعنى يتطلب مهارة عالية، مما يضمن جودة الترجمة ودقتها في السياقات القانونية الرسمية والمهنية.",
+    "image": "/assets/images/article/article21.webp",
+    "link": "#",
+    "slug": "/pages/articles/legal-translation-challenges/legal-translation-challenges.html"
+  },
+  {
+    "title": "التدقيق اللغوي للمحتوى الأكاديمي",
+    "category": "التدقيق اللغوي",
+    "content": "تعلم أساسيات التدقيق اللغوي من خلال دورة شاملة لتحسين النصوص الأكاديمية، مع التركيز على القواعد النحوية، الإملاء، وأسلوب الكتابة لضمان الوضوح، الدقة، والاحترافية في المحتوى العلمي، مما يعزز جودة النصوص الأكاديمية بشكل ملحوظ.",
+    "image": "/assets/images/article/article1.webp",
+    "link": "#",
+    "slug": "/pages/articles/academic-content-proofreading/academic-content-proofreading.html"
+  },
+  {
+    "title": "الاتجاهات المستقبلية في التدريب الشركاتي",
+    "category": "حزم التدريب",
+    "content": "استكشف الاتجاهات الناشئة في التدريب الشركاتي، مثل التدريب الافتراضي والتكنولوجيا التفاعلية. هذه الاتجاهات تعزز الكفاءة، تحسن تجربة التعلم، وتدعم التطوير المهني، مما يشكل مستقبل التدريب بطرق مبتكرة وفعالة للشركات.",
+    "image": "/assets/images/article/article17.webp",
+    "link": "#",
+    "slug": "/pages/articles/future-trends-in-corporate-training/future-trends-in-corporate-training.html"
+  },
+  {
+    "title": "استراتيجيات الترجمة الأدبية",
+    "category": "الترجمة",
+    "content": "تعرف على استراتيجيات ترجمة الأعمال الأدبية بفعالية. الحفاظ على الأسلوب، العاطفة، والسياق الثقافي يضمن ترجمة جذابة ودقيقة، مما يعزز تجربة القراء ويحافظ على جمال النص الأصلي في اللغة المستهدفة.",
+    "image": "/assets/images/services/services4.webp",
+    "link": "#",
+    "slug": "/pages/articles/literary-translation-strategies/literary-translation-strategies.html"
+  },
+  {
+    "title": "الاختلافات بين التحرير والتدقيق اللغوي",
+    "category": "التدقيق اللغوي",
+    "content": "تعرف على الفروق بين التحرير والتدقيق اللغوي. التحرير يركز على تحسين الأسلوب وتنظيم الأفكار، بينما التدقيق يصحح الأخطاء النحوية والإملائية لضمان دقة النص وجودته، مما يعزز وضوح المحتوى وجاذبيته بشكل احترافي.",
+    "image": "/assets/images/article/article8.webp",
+    "link": "#",
+    "slug": "/pages/articles/differences-editing-proofreading/differences-editing-proofreading.html"
+  },
+  {
+    "title": "أهمية حزم التدريب",
+    "category": "حزم التدريب",
+    "content": "فهم قيمة البرامج التدريبية المنظمة في تعزيز مهارات الموظفين. الحزم الفعالة تحسن الأداء، تدعم تحقيق الأهداف المهنية، وتعزز الكفاءة التنظيمية، مما يساهم في نمو الشركات وتطوير بيئة عمل احترافية ومنتجة.",
+    "image": "/assets/images/article/article18.webp",
+    "link": "#",
+    "slug": "/pages/articles/importance-of-training-packages/importance-of-training-packages.html"
+  },
+  {
+    "title": "الترجمة العلمية والتقنية المتخصصة",
+    "category": "الترجمة",
+    "content": "تعرف على تقنيات ترجمة المحتوى العلمي والتقني المعقد. استخدام المصطلحات الدقيقة والحفاظ على المعنى يضمن ترجمة احترافية، مما يدعم البحث العلمي والتطبيقات التقنية بجودة عالية ودقة في السياقات المتخصصة.",
+    "image": "/assets/images/article/article24.webp",
+    "link": "#",
+    "slug": "/pages/articles/specialized-scientific-technical-translation/specialized-scientific-technical-translation.html"
+  },
+  {
+    "title": "تدقيق محتوى الوسائط",
+    "category": "التدقيق اللغوي",
+    "content": "اكتشف نصائح لتدقيق محتوى الوسائط بكفاءة، مثل تطابق النصوص مع الصوت، مراجعة الترجمة بدقة، وضمان وضوح الرسائل والمصطلحات. يضمن تناسق اللغة والأسلوب تجربة جذابة للمشاهدين أو المستمعين، مما يعزز جودة المحتوى المرئي.",
+    "image": "/assets/images/article/article1.webp",
+    "link": "#",
+    "slug": "/pages/articles/media-content-proofreading/media-content-proofreading.html"
+  },
+  {
+    "title": "قياس عائد الاستثمار في التدريب",
+    "category": "حزم التدريب",
+    "content": "تعرف على طرق قياس العائد على الاستثمار في التدريب. تقييم الأثر على الأداء والإنتاجية يساعد في تحديد فعالية البرامج، مما يضمن تحقيق أهداف الشركة وتعزيز الكفاءة المهنية بطريقة مستدامة وقابلة للقياس.",
+    "image": "/assets/images/article/article19.webp",
+    "link": "#",
+    "slug": "/pages/articles/measuring-training-roi/measuring-training-roi.html"
+  },
+  {
+    "title": "دور الترجمة في التبادل الثقافي",
+    "category": "الترجمة",
+    "content": "اكتشف كيف تعزز الترجمة التبادل الثقافي. نقل الأفكار والقيم بدقة يعزز الفهم بين الثقافات، مما يساهم في بناء جسور التواصل، تعزيز التفاهم، ودعم التعاون العالمي بطريقة فعالة ومؤثرة.",
+    "image": "/assets/images/article/article25.webp",
+    "link": "#",
+    "slug": "/pages/articles/translation-role-in-cultural-exchange/translation-role-in-cultural-exchange.html"
+  },
+  {
+    "title": "تقنيات التدقيق اللغوي الحديثة",
+    "category": "التدقيق اللغوي",
+    "content": "تعرف على أحدث تقنيات التدقيق اللغوي باستخدام الذكاء الاصطناعي وخوارزميات معالجة اللغة. تكتشف الأخطاء النحوية والإملائية بدقة، مما يحسن جودة النصوص ويسرع المراجعة اللغوية، لتقديم محتوى احترافي يلبي أعلى المعايير بكفاءة.",
+    "image": "/assets/images/article/article6.jpg",
+    "link": "#",
+    "slug": "/pages/articles/modern-proofreading-techniques/modern-proofreading-techniques.html"
+  }
+]

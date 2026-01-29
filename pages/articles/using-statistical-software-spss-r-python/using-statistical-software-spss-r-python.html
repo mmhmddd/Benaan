@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استخدام برامج التحليل الإحصائي (SPSS, R, Python) في البحث العلمي</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../academic-content-proofreading/academic-content-proofreading.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="canonical" href="https://benaan.com/pages/articles/using-statistical-software-spss-r-python/using-statistical-software-spss-r-python.html" />
+
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="article-page">
+    <header class="article-header">
+      <h1>استخدام برامج التحليل الإحصائي (SPSS, R, Python) في البحث العلمي</h1>
+      <p class="subtitle">دليل تمهيدي لاستخدام SPSS، R، وPython في تحليل البيانات وتعزيز جودة البحث العلمي</p>
+    </header>
+
+    <article id="articleContent" class="article-content">
+      <div class="content-wrapper">
+        <section class="section-card" data-section="intro">
+          <h2>مقدمة</h2>
+          <p>في عصر البيانات الضخمة، أصبح التحليل الإحصائي جزءاً لا يتجزأ من البحث العلمي في مختلف التخصصات، من العلوم الطبيعية والهندسية إلى العلوم الاجتماعية والإنسانية. لم يعد الباحثون يعتمدون فقط على الحسابات اليدوية أو الآلات الحاسبة البسيطة، بل أصبحوا يستعينون ببرامج تحليل إحصائي متخصصة وقوية تمكنهم من التعامل مع كميات هائلة من البيانات، وتطبيق أساليب إحصائية معقدة، واستخلاص نتائج دقيقة وموثوقة.</p>
+          <p>تتنوع برامج التحليل الإحصائي المتاحة، ولكل منها نقاط قوة وضعف ومجالات استخدام مفضلة. من بين أشهر هذه البرامج وأكثرها استخداماً في البحث العلمي نجد SPSS (Statistical Package for the Social Sciences)، وR (لغة وبيئة برمجية للحوسبة الإحصائية والرسوم البيانية)، وPython (لغة برمجة عامة الغرض مع مكتبات قوية لتحليل البيانات).</p>
+          <p>يهدف هذا المقال إلى استعراض كيفية استخدام هذه البرامج الثلاثة (SPSS, R, Python) في البحث العلمي، مع التركيز على خطوات التحليل الإحصائي الأساسية، ومقارنة بين هذه البرامج من حيث الميزات وسهولة الاستخدام والتطبيقات المناسبة. سنتناول كيفية إدخال البيانات وتنظيفها، وإجراء التحليلات الوصفية والاستدلالية، وتصور النتائج باستخدام كل برنامج. كما سنقدم نصائح للباحثين حول كيفية اختيار البرنامج الأنسب لاحتياجاتهم البحثية.</p>
+          <p>سواء كنت باحثاً مبتدئاً أو متمرساً، فإن فهم قدرات هذه البرامج وكيفية استخدامها بفعالية سيساعدك على تحسين جودة أبحاثك وزيادة إنتاجيتك العلمية. يمثل هذا المقال دليلاً تمهيدياً لاستخدام هذه الأدوات القوية في رحلتك البحثية.</p>
+
+        </section>
+
+        <section class="section-card" data-section="overview">
+          <h2>لمحة عامة عن البرامج الثلاثة</h2>
+          <div class="subsection">
+            <h3>SPSS (Statistical Package for the Social Sciences)</h3>
+            <ul>
+              <li>الوصف: برنامج تجاري شهير بواجهة رسومية سهلة الاستخدام (GUI)، تم تطويره في الأصل للعلوم الاجتماعية ولكنه يستخدم الآن في مجالات متنوعة.</li>
+              <li>الميزات: واجهة قائمة منسدلة وبسيطة، مجموعة واسعة من الأساليب الإحصائية الشائعة، إمكانيات جيدة لتصور البيانات، دعم فني وتوثيق شامل.</li>
+              <li>نقاط القوة: سهولة التعلم والاستخدام للمبتدئين، لا يتطلب معرفة برمجية مسبقة، مناسب للتحليلات الإحصائية القياسية.</li>
+              <li>نقاط الضعف: برنامج تجاري ومكلف، أقل مرونة وقابلية للتخصيص مقارنة بـ R وPython، قد يكون أبطأ في التعامل مع مجموعات البيانات الكبيرة جداً.</li>
+              <li>الاستخدامات الشائعة: العلوم الاجتماعية، أبحاث السوق، الرعاية الصحية، التعليم.</li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <h3>R</h3>
+            <ul>
+              <li>الوصف: لغة برمجة وبيئة برمجية مفتوحة المصدر ومجانية، مصممة خصيصاً للحوسبة الإحصائية والرسوم البيانية.</li>
+              <li>الميزات: مجموعة هائلة من الحزم (Packages) التي تغطي تقريباً جميع الأساليب الإحصائية المعروفة والحديثة، قدرات تصور بيانات متقدمة وقابلة للتخصيص بدرجة عالية (باستخدام حزم مثل ggplot2)، مجتمع مستخدمين نشط وكبير.</li>
+              <li>نقاط القوة: مجاني ومفتوح المصدر، مرونة وقوة هائلة في التحليل والتصور، يواكب أحدث التطورات الإحصائية، مناسب للتحليلات المعقدة والمخصصة.</li>
+              <li>نقاط الضعف: يتطلب تعلم لغة البرمجة الخاصة به (منحنى تعلم أكثر حدة من SPSS)، قد يكون أقل سهولة في الاستخدام للمبتدئين الذين ليس لديهم خلفية برمجية.</li>
+              <li>الاستخدامات الشائعة: الإحصاء الحيوي، علم البيانات، المالية، الأوساط الأكاديمية والبحثية.</li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <h3>Python (مع مكتبات تحليل البيانات)</h3>
+            <ul>
+              <li>الوصف: لغة برمجة عامة الغرض، مفتوحة المصدر ومجانية، أصبحت شائعة جداً في علم البيانات والتحليل الإحصائي بفضل مكتباتها القوية مثل Pandas (لمعالجة البيانات)، NumPy (للحسابات الرقمية)، SciPy (للإحصاء والحسابات العلمية)، Statsmodels (للنماذج الإحصائية)، وMatplotlib/Seaborn (لتصور البيانات).</li>
+              <li>الميزات: لغة برمجة متعددة الاستخدامات (يمكن استخدامها لتطوير الويب، والتعلم الآلي، والأتمتة، بالإضافة إلى تحليل البيانات)، تكامل جيد مع أدوات علم البيانات الأخرى، مجتمع مستخدمين كبير ونشط.</li>
+              <li>نقاط القوة: مجاني ومفتوح المصدر، مرونة عالية، لغة برمجة سهلة التعلم نسبياً مقارنة بلغات أخرى، قدرات قوية في معالجة البيانات والتعلم الآلي.</li>
+              <li>نقاط الضعف: قد لا تحتوي مكتباتها الإحصائية على نفس التنوع والشمولية الفورية الموجودة في R لبعض الأساليب الإحصائية المتخصصة جداً (على الرغم من أن الفجوة تضيق باستمرار)، يتطلب تعلم البرمجة.</li>
+              <li>الاستخدامات الشائعة: علم البيانات، التعلم الآلي، تحليل البيانات الكبيرة، الأتمتة، البحث العلمي في مختلف المجالات.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section-card" data-section="analysis-steps">
+          <h2>خطوات التحليل الإحصائي باستخدام البرامج</h2>
+          <p>تتبع عملية التحليل الإحصائي خطوات عامة متشابهة بغض النظر عن البرنامج المستخدم، ولكن تختلف طريقة تنفيذ كل خطوة.</p>
+          <div class="subsection">
+            <h3>إدخال البيانات وتنظيفها (Data Input and Cleaning)</h3>
+            <ul>
+              <li>SPSS: يوفر واجهة تشبه جداول البيانات لإدخال البيانات يدوياً أو استيرادها من ملفات مختلفة (Excel, CSV, TXT). يتضمن أدوات لتحديد أنواع المتغيرات، وتسمية القيم، والتعامل مع القيم المفقودة، وتحويل البيانات.</li>
+              <li>R: يتم قراءة البيانات عادة من ملفات خارجية (CSV, Excel, TXT، إلخ) باستخدام دوال مثل <code>read.csv()</code> أو حزم مثل <code>readxl</code>. يتطلب استخدام الدوال والحزم لمعالجة البيانات وتنظيفها (مثل <code>dplyr</code>, <code>tidyr</code>).</li>
+              <li>Python: تستخدم مكتبة Pandas بشكل أساسي لقراءة البيانات من ملفات متنوعة (<code>pd.read_csv()</code>, <code>pd.read_excel()</code>) وتحويلها إلى هياكل بيانات تسمى DataFrames. توفر Pandas وظائف قوية لتنظيف البيانات ومعالجتها (التعامل مع القيم المفقودة، تغيير أنواع البيانات، إعادة التشكيل).</li>
+            </ul>
+            <p><strong>مثال (قراءة ملف CSV)</strong>:<br>
+            - <strong>R</strong>: <code>my_data <- read.csv("data.csv")</code><br>
+            - <strong>Python</strong>: <code>import pandas as pd; my_data = pd.read_csv("data.csv")</code></p>
+          </div>
+          <div class="subsection">
+            <h3>التحليل الوصفي (Descriptive Analysis)</h3>
+            <ul>
+              <li>SPSS: يوفر قوائم منسدلة سهلة للوصول إلى الإحصاءات الوصفية (المتوسط، الوسيط، الانحراف المعياري، التكرارات، النسب المئوية) والجداول والرسوم البيانية الوصفية (المدرجات التكرارية، الأعمدة البيانية، الرسوم الصندوقية).</li>
+              <li>R: يتطلب استخدام دوال مثل <code>summary()</code>, <code>mean()</code>, <code>sd()</code>, <code>table()</code> أو حزم مثل <code>psych</code> أو <code>Hmisc</code> للحصول على إحصاءات وصفية شاملة. يمكن إنشاء الرسوم البيانية باستخدام الدوال الأساسية أو حزم متقدمة مثل <code>ggplot2</code>.</li>
+              <li>Python: تستخدم مكتبة Pandas وظائف مثل <code>.describe()</code>, <code>.mean()</code>, <code>.median()</code>, <code>.std()</code>, <code>.value_counts()</code> للحصول على الإحصاءات الوصفية. تستخدم مكتبات Matplotlib وSeaborn لإنشاء الرسوم البيانية.</li>
+            </ul>
+            <p><strong>مثال (حساب المتوسط)</strong>:<br>
+            - <strong>SPSS</strong>: Analyze -> Descriptive Statistics -> Descriptives<br>
+            - <strong>R</strong>: <code>mean(my_data$variable)</code><br>
+            - <strong>Python</strong>: <code>my_data['variable'].mean()</code></p>
+          </div>
+          <div class="subsection">
+            <h3>التحليل الاستدلالي (Inferential Analysis)</h3>
+            <ul>
+              <li>SPSS: يوفر قوائم منسدلة لتنفيذ مجموعة واسعة من الاختبارات الاستدلالية الشائعة (اختبارات t، ANOVA، الارتباط، الانحدار، اختبارات مربع كاي، الاختبارات اللامعلمية).</li>
+              <li>R: يتطلب استخدام دوال محددة لكل اختبار (مثل <code>t.test()</code>, <code>aov()</code>, <code>cor()</code>, <code>lm()</code>, <code>chisq.test()</code>) أو حزم متخصصة لأساليب أكثر تقدماً.</li>
+              <li>Python: تستخدم مكتبات مثل SciPy (<code>scipy.stats</code>) وStatsmodels لتنفيذ الاختبارات الاستدلالية (مثل <code>ttest_ind</code>, <code>f_oneway</code>, <code>pearsonr</code>, <code>linregress</code>, <code>chi2_contingency</code>). توفر Statsmodels قدرات متقدمة في النمذجة الإحصائية.</li>
+            </ul>
+            <p><strong>مثال (اختبار t للمجموعات المستقلة)</strong>:<br>
+            - <strong>SPSS</strong>: Analyze -> Compare Means -> Independent-Samples T Test<br>
+            - <strong>R</strong>: <code>t.test(variable ~ group, data = my_data)</code><br>
+            - <strong>Python (SciPy)</strong>: <code>from scipy import stats; group1 = my_data[my_data['group'] == 1]['variable']; group2 = my_data[my_data['group'] == 2]['variable']; stats.ttest_ind(group1, group2)</code></p>
+          </div>
+          <div class="subsection">
+            <h3>تصور البيانات (Data Visualization)</h3>
+            <ul>
+              <li>SPSS: يوفر أدوات مدمجة لإنشاء مجموعة متنوعة من الرسوم البيانية القياسية (أعمدة، خطوط، دوائر، نقاط انتشار، رسوم صندوقية) مع خيارات تخصيص محدودة نسبياً.</li>
+              <li>R: يعتبر من أقوى الأدوات في تصور البيانات، خاصة مع حزمة <code>ggplot2</code> التي تتيح إنشاء رسوم بيانية معقدة وجذابة وقابلة للتخصيص بدرجة عالية بناءً على "قواعد اللغة الرسومية" (Grammar of Graphics).</li>
+              <li>Python: تستخدم مكتبات مثل Matplotlib (لإنشاء الرسوم الأساسية) وSeaborn (لبناء رسوم بيانية إحصائية جذابة ومبنية على Matplotlib) وPlotly (للرسوم التفاعلية). توفر هذه المكتبات مرونة كبيرة في إنشاء وتخصيص الرسوم البيانية.</li>
+            </ul>
+            <p><strong>مثال (رسم بياني نقطي Scatter Plot)</strong>:<br>
+            - <strong>SPSS</strong>: Graphs -> Chart Builder -> Scatter/Dot<br>
+            - <strong>R (ggplot2)</strong>: <code>library(ggplot2); ggplot(my_data, aes(x = var1, y = var2)) + geom_point()</code><br>
+            - <strong>Python (Seaborn)</strong>: <code>import seaborn as sns; sns.scatterplot(data=my_data, x='var1', y='var2')</code></p>
+          </div>
+        </section>
+
+        <section class="section-card" data-section="comparison">
+          <h2>مقارنة بين البرامج واختيار الأنسب</h2>
+          <p>يعتمد اختيار البرنامج الأنسب على عدة عوامل، منها:</p>
+          <ul>
+            <li>الخلفية التقنية للباحث: إذا كان الباحث مبتدئاً وليس لديه خبرة برمجية، قد يكون SPSS هو الخيار الأسهل للبدء. أما إذا كان الباحث مرتاحاً للبرمجة أو يرغب في تعلمها، فإن R وPython يوفران قوة ومرونة أكبر.</li>
+            <li>طبيعة التحليل المطلوب: للتحليلات الإحصائية القياسية والشائعة، قد يكون SPSS كافياً ومناسباً. للتحليلات المتقدمة جداً أو المخصصة أو التي تتطلب أحدث الأساليب الإحصائية، قد يكون R هو الخيار الأفضل. للمشاريع التي تتضمن معالجة بيانات مكثفة، أو تكاملاً مع التعلم الآلي، أو أتمتة، قد يكون Python هو الأنسب.</li>
+            <li>حجم البيانات وتعقيدها: R وPython بشكل عام أفضل في التعامل مع مجموعات البيانات الكبيرة جداً والمعقدة مقارنة بـ SPSS.</li>
+            <li>الحاجة إلى تصورات متقدمة: R (مع ggplot2) وPython (مع Seaborn/Plotly) يوفران قدرات تصور بيانات أكثر تقدماً ومرونة وقابلية للتخصيص من SPSS.</li>
+            <li>التكلفة والترخيص: R وPython مجانيان ومفتوحا المصدر، بينما SPSS برنامج تجاري يتطلب شراء ترخيص قد يكون مكلفاً للأفراد أو المؤسسات الصغيرة.</li>
+            <li>التخصص والمجال البحثي: قد يكون هناك تفضيل لبرنامج معين في تخصصات بحثية محددة بسبب توفر حزم أو أدوات متخصصة أو بسبب شيوع استخدامه بين الزملاء في هذا المجال.</li>
+            <li>الأهداف طويلة المدى: تعلم R أو Python يفتح الأبواب أمام مهارات أوسع في علم البيانات والبرمجة، والتي قد تكون مفيدة للباحث على المدى الطويل.</li>
+          </ul>
+          <p><strong>جدول مقارنة مبسط</strong>:</p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th style="text-align: right;">الميزة</th>
+                  <th style="text-align: right;">SPSS</th>
+                  <th style="text-align: right;">R</th>
+                  <th style="text-align: right;">Python (with libraries)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align: right;">سهولة الاستخدام</td>
+                  <td style="text-align: right;">عالية (واجهة رسومية)</td>
+                  <td style="text-align: right;">متوسطة إلى منخفضة (يتطلب برمجة)</td>
+                  <td style="text-align: right;">متوسطة (يتطلب برمجة، لكن اللغة أسهل نسبياً)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right;">المرونة</td>
+                  <td style="text-align: right;">منخفضة</td>
+                  <td style="text-align: right;">عالية جداً</td>
+                  <td style="text-align: right;">عالية</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right;">القوة الإحصائية</td>
+                  <td style="text-align: right;">جيدة للأساليب القياسية</td>
+                  <td style="text-align: right;">ممتازة (تغطي أحدث الأساليب)</td>
+                  <td style="text-align: right;">جيدة جداً (تنمو بسرعة)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right;">تصور البيانات</td>
+                  <td style="text-align: right;">جيدة (قياسية)</td>
+                  <td style="text-align: right;">ممتازة (متقدمة وقابلة للتخصيص)</td>
+                  <td style="text-align: right;">ممتازة (متقدمة وقابلة للتخصيص)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right;">معالجة البيانات</td>
+                  <td style="text-align: right;">جيدة</td>
+                  <td style="text-align: right;">جيدة جداً</td>
+                  <td style="text-align: right;">ممتازة (خاصة مع Pandas)</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right;">التعلم الآلي</td>
+                  <td style="text-align: right;">محدودة</td>
+                  <td style="text-align: right;">جيدة</td>
+                  <td style="text-align: right;">ممتازة</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right;">التكلفة</td>
+                  <td style="text-align: right;">تجاري (مكلف)</td>
+                  <td style="text-align: right;">مجاني ومفتوح المصدر</td>
+                  <td style="text-align: right;">مجاني ومفتوح المصدر</td>
+                </tr>
+                <tr>
+                  <td style="text-align: right;">المجتمع والدعم</td>
+                  <td style="text-align: right;">دعم فني رسمي، مجتمع مستخدمين جيد</td>
+                  <td style="text-align: right;">مجتمع مستخدمين ضخم ونشط جداً</td>
+                  <td style="text-align: right;">مجتمع مستخدمين ضخم ونشط جداً</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section-card" data-section="tips">
+          <h2>نصائح للباحثين</h2>
+          <ul>
+            <li>ابدأ بالأساسيات: بغض النظر عن البرنامج الذي تختاره، ركز على فهم المبادئ الإحصائية الأساسية أولاً.</li>
+            <li>لا تخف من البرمجة: تعلم أساسيات البرمجة في R أو Python يمكن أن يفتح لك آفاقاً واسعة في التحليل والتصور.</li>
+            <li>استفد من المصادر التعليمية: هناك العديد من الكتب والدورات التدريبية والمقالات والمنتديات المتاحة عبر الإنترنت لتعلم أي من هذه البرامج.</li>
+            <li>تدرب باستمرار: أفضل طريقة لتعلم أي برنامج هي من خلال الممارسة العملية وتطبيق ما تعلمته على بيانات حقيقية.</li>
+            <li>اختر الأداة المناسبة للمهمة: قد تجد أن استخدام مزيج من البرامج هو الأفضل في بعض الأحيان (مثلاً، استخدام Python لتنظيف البيانات وR للتحليل الإحصائي المتقدم).</li>
+            <li>اطلب المساعدة عند الحاجة: لا تتردد في طلب المساعدة من الزملاء أو الخبراء أو مجتمعات المستخدمين عبر الإنترنت عند مواجهة صعوبات.</li>
+          </ul>
+        </section>
+
+        <section class="section-card" data-section="conclusion">
+          <h2>خاتمة</h2>
+          <p>تعد برامج التحليل الإحصائي مثل SPSS وR وPython أدوات لا غنى عنها للباحثين في العصر الحديث. كل برنامج له خصائصه ونقاط قوته وضعفه، واختيار الأنسب يعتمد على احتياجات الباحث وخلفيته التقنية وطبيعة البحث. SPSS يوفر سهولة استخدام للمبتدئين من خلال واجهته الرسومية، بينما يوفر R قوة ومرونة هائلة في التحليل الإحصائي والتصور بفضل طبيعته البرمجية ومجتمعه النشط. Python، بفضل مكتباته القوية مثل Pandas وStatsmodels، أصبح منافساً قوياً في تحليل البيانات، خاصة عند الحاجة إلى تكامل مع مهام علم البيانات الأخرى مثل التعلم الآلي.</p>
+          <p>بغض النظر عن البرنامج المختار، فإن فهم خطوات التحليل الإحصائي الأساسية (إدخال البيانات وتنظيفها، التحليل الوصفي، التحليل الاستدلالي، تصور البيانات) وتطبيقها بشكل صحيح هو المفتاح للحصول على نتائج موثوقة وذات معنى. كما أن الوعي بالأخطاء الشائعة في التحليل الإحصائي واتخاذ خطوات لتجنبها أمر بالغ الأهمية لضمان جودة البحث العلمي.</p>
+          <p>نشجع الباحثين على استكشاف هذه الأدوات القوية والاستثمار في تعلمها، فإتقان استخدام برامج التحليل الإحصائي المناسبة يمكن أن يعزز بشكل كبير من قدرتهم على تحليل البيانات بفعالية، واستخلاص رؤى قيمة، والمساهمة في تقدم المعرفة في مجالاتهم.</p>
+        </section>
+
+        <section class="section-card" data-section="references">
+          <h2>المراجع</h2>
+          <ul>
+            <li>Field, A. (2018). Discovering statistics using IBM SPSS statistics (5th ed.). Sage publications.</li>
+            <li>Crawley, M. J. (2012). The R book (2nd ed.). John Wiley & Sons.</li>
+            <li>McKinney, W. (2017). Python for data analysis: Data wrangling with Pandas, NumPy, and IPython (2nd ed.). O'Reilly Media.</li>
+            <li>Kabacoff, R. I. (2015). R in action: Data analysis and graphics with R (2nd ed.). Manning Publications.</li>
+            <li>VanderPlas, J. (2016). Python data science handbook: Essential tools for working with data. O'Reilly Media.</li>
+            <li>Seabold, S., & Perktold, J. (2010). Statsmodels: Econometric and statistical modeling with python. Proceedings of the 9th Python in Science Conference.</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch('/shared/navbar/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('خطأ في تحميل الناف بار:', error));
+
+    fetch('/shared/footer/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('خطأ في تحميل footer:', error));
+  </script>
+</body>
+</html>
