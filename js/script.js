@@ -127,8 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Typewriter effect with erasing and cycling
   const heroTitle = document.querySelector('.hero-title');
   const texts = [
-    "حلول متكاملة لجميع<br>خدمات الأعمال",
-    "استكشف خدماتنا الآن<br> وتواصل معنا"
+    " <br> بنان | خدمات احترافية لدعم الأعمال واتخاذ القرار",
+    // "استكشف خدماتنا الآن<br> وتواصل معنا"
   ];
   let index = 0;
   let charIndex = 0;

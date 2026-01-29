@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# مكان ملف الخريطة
-Sitemap: https://www.benaan.com/sitemap.xml
+Sitemap: https://benaan.com/sitemap.xml

@@ -18,8 +18,8 @@
 
   <meta property="og:title" content="تواصل معنا - شركة بنان">
   <meta property="og:description" content="تواصل مع شركة بنان للحصول على استشارة مجانية أو الاستفسار عن خدماتنا في التحليل الإحصائي، الترجمة، التدريب، والتدقيق اللغوي.">
-  <meta property="og:image" content="https://www.benaan.com/assets/images/hero-image.webp">
-  <meta property="og:url" content="https://www.benaan.com/contact">
+  <meta property="og:image" content="https://benaan.com/assets/images/home/heroimg.jpg">
+  <meta property="og:url" content="https://benaan.com/contact">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="شركة بنان">
   <meta property="og:locale" content="ar_AR">
@@ -27,19 +27,19 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="تواصل معنا - شركة بنان">
   <meta name="twitter:description" content="تواصل مع شركة بنان للحصول على استشارة مجانية أو الاستفسار عن خدماتنا في التحليل الإحصائي، الترجمة، التدريب، والتدقيق اللغوي.">
-  <meta name="twitter:image" content="https://www.benaan.com/assets/images/home/heroimg.jpg">
+  <meta name="twitter:image" content="https://benaan.com/assets/images/home/heroimg.jpg">
 
-  <link rel="alternate" hreflang="ar-SA" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-KW" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-QA" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-OM" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-BH" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-EG" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-MA" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-TN" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-DZ" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-JO" href="https://www.benaan.com/contact" />
-  <link rel="alternate" hreflang="ar-AE" href="https://www.benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-SA" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-KW" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-QA" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-OM" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-BH" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-EG" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-MA" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-TN" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-DZ" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-JO" href="https://benaan.com/contact" />
+  <link rel="alternate" hreflang="ar-AE" href="https://benaan.com/contact" />
 
 <link rel="canonical" href="https://benaan.com/pages/contact/contact.html" />
 
@@ -241,16 +241,15 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/js/contact.js"></script>
-  <script src="/js/navigation.js"></script>
   <script>
-    fetch('../../shared/navbar/navbar.html')
+    fetch('/shared/navbar/navbar.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('navbar-placeholder').innerHTML = data;
   })
   .catch(error => console.error('خطأ في تحميل الناف بار:', error));
 
-fetch('../../shared/footer/footer.html')
+fetch('/shared/footer/footer.html')
   .then(response => response.text())
   .then(data => {
     document.getElementById('footer-placeholder').innerHTML = data;

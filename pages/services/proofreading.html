@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="../../css/proofreading.css">
+  <link rel="icon" href="/assets/images/home/logo.png" type="image/png">
   <link rel="stylesheet" href="../../css/navbar.css">
   <link rel="stylesheet" href="../../css/footer.css">
   <link rel="canonical" href="https://benaan.com/pages/services/proofreading.html" />
@@ -28,7 +29,7 @@
         <h1>خدمات التدقيق اللغوي وإعادة الصياغة وتقليل الاقتباس</h1>
         <p>وهنحط التفاصيل دي تحتها
 في عالم الأعمال والأوساط الأكاديمية، لا يكفي أن تكون أفكارك قوية؛ بل يجب أن تُقدم بوضوح، دقة، واحترافية ،نحن نقدم حزمة متكاملة من الخدمات اللغوية المصممة لضمان أن محتواك يحقق أقصى تأثير، مع الالتزام بأعلى معايير الجودة والأصالة ، حيث نوفر خدمات تشمل التدقيق اللغوي الشامل وإعادة الصياغة الاحترافية وتقليل نسبة الاقتباس </p>
-        <a href="../contact.html" class="btn btn-primary">تواصل معنا الآن</a>
+        <a href="/pages/contact/contact.html" class="btn btn-primary">تواصل معنا الآن</a>
       </div>
       <div class="service-hero-image">
         <img src="/assets/images/services/services4.webp" alt="صورة تعبر عن خدمة التدقيق اللغوي من شركة EBC">
@@ -196,7 +197,7 @@
       <div class="container">
         <h2>هل تحتاج إلى خدمة التدقيق اللغوي؟</h2>
         <p>تواصل معنا الآن للحصول على استشارة مجانية وعرض سعر مخصص لمشروعك</p>
-        <a href="../contact.html" class="btn btn-large" aria-label="تواصل معنا للحصول على استشارة مجانية حول التدقيق اللغوي">تواصل معنا الآن</a>
+        <a href="/pages/contact/contact.html" class="btn btn-large" aria-label="تواصل معنا للحصول على استشارة مجانية حول التدقيق اللغوي">تواصل معنا الآن</a>
       </div>
     </section>
   </main>
@@ -211,7 +212,7 @@
       });
     });
 
-    fetch('../../shared/navbar/navbar.html')
+    fetch('/shared/navbar/navbar.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
@@ -221,7 +222,7 @@
         document.getElementById('navbar-placeholder').innerHTML = '<p>فشل تحميل الناف بار، يرجى المحاولة لاحقًا.</p>';
       });
 
-    fetch('../../shared/footer/footer.html')
+    fetch('/shared/footer/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/footer.css">
   <link rel="canonical" href="https://benaan.com/pages/articles/modern-proofreading-techniques/modern-proofreading-techniques.html" />
-
+  <meta name="description" content="استعراض شامل لأحدث الأدوات والتقنيات لتحسين جودة النصوص باستخدام الذكاء الاصطناعي">
 </head>
 <body>
   <div id="navbar-placeholder"></div>
@@ -329,16 +329,15 @@
   <div id="footer-placeholder"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="modern-proofreading-tools.js"></script>
   <script>
-    fetch('../../../shared/navbar/navbar.html')
+    fetch('/shared/navbar/navbar.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
       })
       .catch(error => console.error('خطأ في تحميل الناف بار:', error));
 
-    fetch('../../../shared/footer/footer.html')
+    fetch('/shared/footer/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
