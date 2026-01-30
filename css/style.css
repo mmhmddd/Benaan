@@ -1540,7 +1540,19 @@ hero-text2 {
   .countries-title {
     font-size: 1rem;
     margin-bottom: 0.8rem;
+    text-align: center;
   }
+  .countries-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--benaan-teal), var(--benaan-gold));
+  border-radius: 2px;
+}
 
   .flags-container {
     grid-template-columns: repeat(9, 1fr);
