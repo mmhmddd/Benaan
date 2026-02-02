@@ -39,7 +39,7 @@ main {
 }
 
 .hero {
-  background-image: url('/assets/images/home/heroimg.jpg');
+  background-image: url('/assets/images/home/heroimg.webp');
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
