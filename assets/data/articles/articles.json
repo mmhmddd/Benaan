@@ -56,6 +56,14 @@
     "slug": "/pages/articles/using-statistical-software-spss-r-python/using-statistical-software-spss-r-python.html"
   },
   {
+    "title": "تحليل البيانات: المفهوم، الأنواع، الأدوات، والتطبيقات العملية",
+    "category": "التحليل الإحصائي",
+    "content": "دليل شامل لتحليل البيانات يشمل المفهوم والأنواع (وصفي، إحصائي، مالي، قياسي) وأبرز الأدوات كـ Excel وPower BI وPython وSQL، مع تطبيقاتها العملية في التسويق والتمويل والإدارة لدعم القرارات الاستراتيجية.",
+    "image": "/assets/images/article/article10.webp",
+    "link": "#",
+    "slug": "/pages/articles/data-analysis/data-analysis.html"
+  },
+  {
     "title": "تخصيص التدريب للصناعات",
     "category": "حزم التدريب",
     "content": "تعرف على كيفية تخصيص برامج التدريب لتلبية احتياجات الصناعات المحددة. تصميم الحزم حسب متطلبات القطاع يعزز الكفاءة، يحسن الأداء، ويدعم تحقيق الأهداف المهنية بفعالية، مما يضمن تجربة تدريبية ملائمة ومؤثرة.",
