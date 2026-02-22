@@ -1,22 +1,100 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const navbar = document.querySelector('.navbar');
+
+  // Wait for navbar to be injected via fetch (since navbar is loaded asynchronously)
+  function initNavbar() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarNav');
+
+    if (!navbarToggler || !navbarCollapse) {
+      // Navbar not loaded yet, retry after 100ms
+      setTimeout(initNavbar, 100);
+      return;
+    }
+
+    // Toggle navbar collapse on toggler click
+    navbarToggler.addEventListener('click', function (e) {
+      e.stopPropagation(); // Prevent document click from firing immediately and closing menu
+      navbarCollapse.classList.toggle('show');
+      const isExpanded = navbarCollapse.classList.contains('show');
+      navbarToggler.setAttribute('aria-expanded', isExpanded);
+    });
+
+    // Close navbar when clicking outside the navbar
+    document.addEventListener('click', function (event) {
+      const isClickInsideNavbar = event.target.closest('.navbar');
+      if (!isClickInsideNavbar) {
+        navbarCollapse.classList.remove('show');
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close navbar when clicking a nav link (not dropdown toggle) or dropdown item
+    navbarCollapse.querySelectorAll('.nav-link:not(.dropdown-toggle), .dropdown-item').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navbarCollapse.classList.remove('show');
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Add scrolled class when scrolling down
+    window.addEventListener('scroll', function () {
+      if (navbar && window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else if (navbar) {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  }
+
+  initNavbar();
+});
+
+
+// =============================================
+// Intersection Observer for fade-in effect
+// =============================================
 document.addEventListener('DOMContentLoaded', () => {
-  // Intersection Observer for testimonial section
-  const observer = new IntersectionObserver(
+  const fadeObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
-          observer.unobserve(entry.target);
+          fadeObserver.unobserve(entry.target);
         }
       });
     },
     { threshold: 0.3 }
   );
 
-  const section = document.querySelector('.testimonial-section');
-  if (section) observer.observe(section);
+  const sections = document.querySelectorAll('.fade-in');
+  sections.forEach(section => fadeObserver.observe(section));
+});
 
-  // Slider functionality
+
+// =============================================
+// Testimonials Slider
+// =============================================
+document.addEventListener('DOMContentLoaded', () => {
+  // Intersection Observer for testimonial section
+  const testimonialObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          testimonialObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  const testimonialSection = document.querySelector('.testimonial-section');
+  if (testimonialSection) testimonialObserver.observe(testimonialSection);
+
   const slider = document.getElementById('testimonialsSlider');
+  if (!slider) return;
+
   const cards = Array.from(slider.querySelectorAll('.testimonial-card'));
   const dots = Array.from(document.querySelectorAll('.dot'));
   const prevBtn = document.getElementById('prevBtn');
@@ -30,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.display = 'block';
 
       if (window.innerWidth > 768) {
-        // Desktop behavior
+        // Desktop: show center + two side cards
         const prevIndex = (currentIndex - 1 + totalCards) % totalCards;
         const nextIndex = (currentIndex + 1) % totalCards;
 
@@ -42,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
           card.style.display = 'none';
         }
       } else {
-        // Mobile behavior
+        // Mobile: show only current card
         card.style.display = index === currentIndex ? 'block' : 'none';
       }
     });
@@ -51,23 +129,26 @@ document.addEventListener('DOMContentLoaded', () => {
       dot.classList.toggle('active', index === currentIndex);
     });
 
-    // Ensure arrows remain fixed
-    prevBtn.style.left = window.innerWidth > 768 ? '-60px' : '10px';
-    nextBtn.style.right = window.innerWidth > 768 ? '-60px' : '10px';
+    if (prevBtn && nextBtn) {
+      prevBtn.style.left = window.innerWidth > 768 ? '-60px' : '10px';
+      nextBtn.style.right = window.innerWidth > 768 ? '-60px' : '10px';
+    }
   }
 
-  // Navigation button events
-  prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-    updateSlider();
-  });
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      updateSlider();
+    });
+  }
 
-  nextBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalCards;
-    updateSlider();
-  });
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateSlider();
+    });
+  }
 
-  // Dot navigation
   dots.forEach((dot) => {
     dot.addEventListener('click', () => {
       currentIndex = parseInt(dot.dataset.index);
@@ -75,26 +156,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Touch support for mobile (disabled on small screens for simplicity)
+  // Touch support
   let touchStartX = 0;
   let touchEndX = 0;
 
-  if (window.innerWidth > 768) {
-    slider.addEventListener('touchstart', (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    });
+  slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
 
-    slider.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      if (touchStartX - touchEndX > 50) {
-        currentIndex = (currentIndex + 1) % totalCards;
-        updateSlider();
-      } else if (touchEndX - touchStartX > 50) {
-        currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-        updateSlider();
-      }
-    });
-  }
+  slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    if (touchStartX - touchEndX > 50) {
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateSlider();
+    } else if (touchEndX - touchStartX > 50) {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      updateSlider();
+    }
+  });
 
   // Initialize slider
   updateSlider();
@@ -106,62 +185,49 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
+// =============================================
+// Typewriter Effect
+// =============================================
 document.addEventListener('DOMContentLoaded', () => {
-  // Intersection Observer for fade-in effect
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.3 }
-  );
-
-  const sections = document.querySelectorAll('.fade-in');
-  sections.forEach(section => observer.observe(section));
-
-  // Typewriter effect with erasing and cycling
   const heroTitle = document.querySelector('.hero-title');
+  if (!heroTitle) return;
+
   const texts = [
-    " <br> بنان | خدمات احترافية لدعم الأعمال واتخاذ القرار",
-    // "استكشف خدماتنا الآن<br> وتواصل معنا"
+    "بنان | خدمات احترافية لدعم الأعمال واتخاذ القرار",
   ];
+
   let index = 0;
   let charIndex = 0;
   let isErasing = false;
   let isTyping = true;
 
   function typeWriter() {
-    const currentText = texts[index].split('').join(''); // Handle <br> as plain text for now
+    const currentText = texts[index];
     const cursor = '<span class="cursor">|</span>';
 
     if (isTyping) {
       if (charIndex <= currentText.length) {
         heroTitle.innerHTML = currentText.substring(0, charIndex) + cursor;
         charIndex++;
-        setTimeout(typeWriter, 100); // Typing speed
+        setTimeout(typeWriter, 100);
       } else {
         setTimeout(() => {
           isTyping = false;
           isErasing = true;
           typeWriter();
-        }, 2000); // Pause before erasing
+        }, 2000);
       }
     } else if (isErasing) {
       if (charIndex >= 0) {
         heroTitle.innerHTML = currentText.substring(0, charIndex) + cursor;
         charIndex--;
-        setTimeout(typeWriter, 50); // Erasing speed
+        setTimeout(typeWriter, 50);
       } else {
         isErasing = false;
-        index = (index + 1) % texts.length; // Switch to next text
+        index = (index + 1) % texts.length;
         charIndex = 0;
         isTyping = true;
-        setTimeout(typeWriter, 500); // Pause before next typing
+        setTimeout(typeWriter, 500);
       }
     }
   }
@@ -170,17 +236,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-  document.addEventListener('DOMContentLoaded', () => {
-    // منع النقر الأيمن على الصور
-    document.querySelectorAll('img').forEach(img => {
-      img.addEventListener('contextmenu', (e) => {
-        e.preventDefault(); // منع القائمة السياقية
-        alert('عذرًا، لا يمكن تحميل الصور مباشرة. تواصل معنا للحصول على المحتوى!'); // تنبيه اختياري
-      });
-    });
-
-    // منع النقر الأيمن على الصفحة بأكملها (اختياري)
-    document.addEventListener('contextmenu', (e) => {
+// =============================================
+// Prevent Right-Click on Images
+// =============================================
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('contextmenu', (e) => {
       e.preventDefault();
     });
   });
+
+  document.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+  });
+});
