@@ -1,5 +1,60 @@
 [
-
+  {
+    "title": "شركات تحليل البيانات في مصر",
+    "category": "التحليل الإحصائي",
+    "content": "اكتشف أفضل شركات تحليل البيانات في مصر وكيفية تطوير أعمالك. تقدم شركة بنان خدمات تحليل البيانات الاحترافية لضمان نمو استثماراتك في السوق المصري.",
+    "image": "/assets/images/article/data-analysis-companies-egypt.png",
+    "link": "#",
+    "slug": "/pages/articles/data-analysis-companies-egypt/data-analysis-companies-egypt.html"
+  },
+  {
+    "title": "شركات تحليل البيانات في السعودية",
+    "category": "التحليل الإحصائي",
+    "content": "اكتشف أفضل شركات تحليل البيانات في السعودية ودورها في نمو أعمالك. تقدم شركة بنان Benaan حلول تحليلات بيانات الأعمال بدقة واحترافية عالية.",
+    "image": "/assets/images/article/data-analysis-companies-saudi.png",
+    "link": "#",
+    "slug": "/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html"
+  },
+  {
+    "title": "التحليل الاقتصادي: المفهوم والأنواع وأدوات التحليل في اتخاذ القرار",
+    "category": "التحليل الاقتصادي",
+    "content": "اكتشف أحدث طرق التحليل الاقتصادي وكيفية بناء النماذج القياسية بدقة. دليل شامل حول أدوات التحليل الاقتصادي الحديثة وأنواعه المستخدمة في الدراسات التطبيقية.",
+    "image": "/assets/images/article/economic-analysis.png",
+    "link": "#",
+    "slug": "/pages/articles/economic-analysis/economic-analysis.html"
+  },
+  {
+    "title": "كيفية عمل تحليل مالي لشركة خطوة بخطوة",
+    "category": "التحليل المالي",
+    "content": "دليل شامل لتحليل القوائم المالية للشركات واتخاذ قرارات استثمارية ناجحة. تعلم كيفية تحليل قائمة الدخل والمركز المالي والتدفقات النقدية والنسب المالية الأساسية.",
+    "image": "/assets/images/article/financial-analysis.png",
+    "link": "#",
+    "slug": "/pages/articles/financial-analysis/financial-analysis.html"
+  },
+  {
+    "title": "نسب الربحية: دليل شامل لتحليل الأداء المالي",
+    "category": "التحليل المالي",
+    "content": "تعرف على نسب الربحية الأساسية وكيفية استخدامها في تحليل الأداء المالي للشركات. دليل شامل لفهم هامش الربح الإجمالي والتشغيلي والصافي وتفسير نتائجها.",
+    "image": "/assets/images/article/profitability-ratios.png",
+    "link": "#",
+    "slug": "/pages/articles/profitability-ratios/profitability-ratios.html"
+  },
+  {
+    "title": "مراحل التحليل المالي: من جمع البيانات إلى اتخاذ القرار",
+    "category": "التحليل المالي",
+    "content": "استعراض شامل لمراحل التحليل المالي الاحترافي بدءاً من جمع البيانات المالية وتنظيفها وصولاً إلى تفسير النتائج ورفع التوصيات الاستراتيجية.",
+    "image": "/assets/images/article/stages-financial-analysis.png",
+    "link": "#",
+    "slug": "/pages/articles/stages-financial-analysis/stages-financial-analysis.html"
+  },
+  {
+    "title": "أدوات التحليل الاقتصادي: دليل شامل للأدوات والتقنيات",
+    "category": "التحليل الاقتصادي",
+    "content": "تعرف على أبرز أدوات التحليل الاقتصادي المستخدمة في تقييم الأداء واتخاذ القرارات الاستراتيجية، من تحليل التكلفة والعائد إلى النماذج الاقتصادية القياسية المتقدمة.",
+    "image": "/assets/images/article/tools-economic-analysis.png",
+    "link": "#",
+    "slug": "/pages/articles/tools-economic-analysis/tools-economic-analysis.html"
+  },
   {
     "title": "طرق معالجة البيانات لتحليل إحصائي فعال",
     "category": "التحليل الإحصائي",
@@ -9,9 +64,9 @@
     "slug": "/pages/articles/Methods-of-saving-data/Methods-of-saving-data.html"
   },
   {
-    "title":"ما هو تحليل البيانات؟",
-    "category":"التحليل الإحصائي", 
-    "content":"تحليل البيانات هو عملية فحص وتنظيم وتفسير البيانات لاستخلاص معلومات مفيدة. يشمل جمع البيانات، تنظيفها، وتحليلها باستخدام تقنيات إحصائية لاكتشاف الأنماط والاتجاهات. يساعد تحليل البيانات في اتخاذ قرارات مستنيرة في مختلف المجالات مثل الأعمال، الصحة، والعلوم.",
+    "title": "ما هو تحليل البيانات؟",
+    "category": "التحليل الإحصائي",
+    "content": "تحليل البيانات هو عملية فحص وتنظيم وتفسير البيانات لاستخلاص معلومات مفيدة. يشمل جمع البيانات، تنظيفها، وتحليلها باستخدام تقنيات إحصائية لاكتشاف الأنماط والاتجاهات. يساعد تحليل البيانات في اتخاذ قرارات مستنيرة في مختلف المجالات مثل الأعمال، الصحة، والعلوم.",
     "image": "/assets/images/article/What-is-data-analysis/Picture1.png",
     "link": "#",
     "slug": "/pages/articles/what-is-data-analysis/what-is-data-analysis.html"
