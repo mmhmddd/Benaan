@@ -1,5 +1,53 @@
 [
   {
+  "title": "انواع برامج التحليل الاحصائي وأفضل أدوات تحليل البيانات",
+  "category": "التحليل الإحصائي",
+  "content": "تعرف على أهم انواع برامج التحليل الاحصائي ومميزاتها من SPSS وR وStata وPython وExcel وPower BI. تقدم شركة بنان دليلاً شاملاً حول أفضل برامج تحليل البيانات لضمان دقة نتائجك.",
+  "image": "/pages/articles/data-analytics-stats/Picture4.jpg",
+  "link": "#",
+  "slug": "/pages/articles/data-analytics-stats/data-analytics-stats.html"
+  },
+  {
+  "title": "أفضل محلل إحصائي SPSS في السعودية | شركة بنان",
+  "category": "التحليل الإحصائي",
+  "content": "تعرف على أفضل خدمات التحليل الإحصائي باستخدام SPSS في السعودية. تقدم شركة بنان حلولاً احترافية لتحليل البيانات والرسائل العلمية والأبحاث الأكاديمية بأعلى معايير الدقة.",
+  "image": "/pages/articles/banan-top-spss-analyst-in-saudi/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/banan-top-spss-analyst-in-saudi/banan-top-spss-analyst-in-saudi.html"
+  },
+  {
+  "title": "الفرق بين SPSS و EViews: أيهما أفضل في تحليل البيانات",
+  "category": "التحليل الإحصائي",
+  "content": "اكتشف الفروق الجوهرية بين برنامجي EViews ونظام SPSS في معالجة البيانات. تقدم بنان دليلاً حول تحليل بيانات SPSS باحترافية وكيفية اختيار الأداة المناسبة بناءً على طبيعة البيانات المتاحة.",
+  "image": "/pages/articles/spss-vs-eviews/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/spss-vs-eviews/spss-vs-eviews.html"
+  },
+    {
+    "title": "التحليل الإحصائي باستخدام لغة R خطوة بخطوة للمبتدئين والباحثين",
+    "category": "التحليل الإحصائي",
+    "content": "احترف التحليل الإحصائي باستخدام لغة R وأحدث تقنيات المعالجة. توضح شركة بنان كيفية تحليل البيانات باستخدام R بدقة وكفاءة عالية للمبتدئين والباحثين في جميع التخصصات العلمية والأكاديمية.",
+    "image": "/pages/articles/r-stats-step-by-step/Picture1.jpg",
+    "link": "#",
+    "slug": "/pages/articles/r-stats-step-by-step/r-stats-step-by-step.html"
+  },
+  {
+  "title": "التحليل الإحصائي للبيانات باستخدام برنامج SPSS خطوة بخطوة",
+  "category": "التحليل الإحصائي",
+  "content": "تعلم أسرار التحليل الإحصائي للبيانات باستخدام SPSS...",
+  "image": "/pages/articles/data-analysis-using-SPSS-software/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/data-analysis-using-SPSS-software/data-analysis-using-SPSS-software.html"
+  },
+  {
+    "title": "التحليل الإحصائي باستخدام برنامج Excel خطوة بخطوة",
+    "category": "التحليل الإحصائي",
+    "content": "تعلم فن التحليل الإحصائي باستخدام برنامج Excel بدقة. توضح شركة بنان كيفية تحليل البيانات باستخدام برنامج Excel لضمان نتائج موثوقة في الأبحاث العلمية والتطبيقات العملية.",
+    "image": "/pages/articles/Statistical-analysis-using-Excel/Picture1.jpg",
+    "link": "#",
+    "slug": "/pages/articles/Statistical-analysis-using-Excel/statistical-analysis-using-Excel.html"
+  },
+  {
     "title": "شركات تحليل البيانات في مصر",
     "category": "التحليل الإحصائي",
     "content": "اكتشف أفضل شركات تحليل البيانات في مصر وكيفية تطوير أعمالك. تقدم شركة بنان خدمات تحليل البيانات الاحترافية لضمان نمو استثماراتك في السوق المصري.",
