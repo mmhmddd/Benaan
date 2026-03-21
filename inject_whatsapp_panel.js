@@ -1,19 +1,38 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دور الترجمة في التبادل الثقافي والتواصل العالمي</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="../academic-content-proofreading/academic-content-proofreading.css">
-  <link rel="stylesheet" href="/css/navbar.css">
-  <link rel="stylesheet" href="/css/footer.css">
-  <link rel="canonical" href="https://benaan.com/pages/articles/translation-role-in-cultural-exchange/translation-role-in-cultural-exchange.html">
-  <meta name="description" content="استكشاف دور الترجمة في تعزيز التبادل الثقافي والتواصل العالمي عبر الأدب والعلوم والدبلوماسية.">
-  <meta name="keywords" content="الترجمة, التبادل الثقافي, التواصل العالمي, الأدب, العلوم, الدبلوماسية, التفاهم بين الثقافات, الترجمة الأدبية, نشر المعرفة">
-  <link rel="stylesheet" href="../../../css/floating-icons.css">
+#!/usr/bin/env node
+/**
+ * inject_whatsapp_panel.js
+ *
+ * Run from the ROOT of your project (Benaan folder):
+ *   node inject_whatsapp_panel.js
+ *
+ * What it does:
+ *  - Scans all .html files recursively
+ *  - Skips files that already have the WhatsApp panel (#wa-trigger)
+ *  - Injects the full WhatsApp CSS + HTML + JS into files that are missing it
+ *
+ * Injection points:
+ *  - CSS  → inserted before </style> or </head>
+ *  - HTML → inserted after <body> (or after <div id="navbar-placeholder"></div>)
+ *  - JS   → inserted before </body>
+ */
 
+const fs   = require('fs');
+const path = require('path');
+
+// ─── Folders to skip ─────────────────────────────────────────────────────────
+const SKIP_DIRS = new Set(['.git', 'node_modules', '.vscode', '.idea', 'dist', 'build']);
+
+// ─── Colors ──────────────────────────────────────────────────────────────────
+const green  = (s) => `\x1b[32m${s}\x1b[0m`;
+const yellow = (s) => `\x1b[33m${s}\x1b[0m`;
+const cyan   = (s) => `\x1b[36m${s}\x1b[0m`;
+const red    = (s) => `\x1b[31m${s}\x1b[0m`;
+const bold   = (s) => `\x1b[1m${s}\x1b[0m`;
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// WHATSAPP CSS BLOCK
+// ═══════════════════════════════════════════════════════════════════════════════
+const WA_CSS = `
   <style>
     /* =====================================================
        WHATSAPP PROFESSIONAL SLIDING PANEL
@@ -162,10 +181,12 @@
       #wa-panel { left: -310px; top: 50%; bottom: auto; transform: translateY(-50%); border-radius: 0 16px 16px 0; border: 1px solid #e0e0e0; border-left: none; width: 290px; }
       #wa-panel.open { left: 40px; }
     }
-  </style>
-</head>
-<body>
-  <div id="navbar-placeholder"></div>
+  </style>`;
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// WHATSAPP HTML BLOCK
+// ═══════════════════════════════════════════════════════════════════════════════
+const WA_HTML = `
   <!-- ===== WHATSAPP TRIGGER TAB ===== -->
   <div id="wa-trigger" onclick="waToggle()">
     <div id="wa-pill">
@@ -229,160 +250,12 @@
       محادثتك آمنة ومشفرة
     </div>
   </div>
-  <!-- ===== END WHATSAPP PANEL ===== -->
+  <!-- ===== END WHATSAPP PANEL ===== -->`;
 
-  <main class="article-page">
-    <header class="article-header">
-      <h1>دور الترجمة في التبادل الثقافي والتواصل العالمي</h1>
-      <p class="subtitle">جسر لنقل الأفكار والمعارف عبر الثقافات</p>
-    </header>
-
-    <article id="articleContent" class="article-content">
-      <div class="content-wrapper">
-        <section class="section-card" data-section="intro">
-          <h2>مقدمة</h2>
-          <p>الترجمة جسر يربط الثقافات ويعزز التفاهم العالمي.</p>
-          <p>تنقل الأفكار والمعارف عبر الحدود اللغوية.</p>
-          <p>تستعرض المقالة دورها في الأدب والعلوم والدبلوماسية.</p>
-
-        </section>
-
-        <section class="section-card" data-section="cultural-exchange">
-          <h2>الترجمة كجسر للتبادل الثقافي</h2>
-          <div class="subsection">
-            <h3>نقل التراث الثقافي والأدبي</h3>
-            <p>تنقل الترجمة الأدبية روائع الأدب وتعزز التفاهم.</p>
-            <p>مثال: ترجمة "ألف ليلة وليلة" أثرت في الأدب الأوروبي.</p>
-            <p>تساعد على فهم القيم والمشاعر الإنسانية المشتركة.</p>
-          </div>
-          <div class="subsection">
-            <h3>تعزيز التنوع الثقافي والحوار بين الحضارات</h3>
-            <p>تحافظ على التنوع الثقافي وتمكن الثقافات الصغيرة.</p>
-            <p>تعزز الحوار وتكسر الصور النمطية بين الثقافات.</p>
-            <p>تمنع هيمنة ثقافة واحدة في عصر العولمة.</p>
-          </div>
-        </section>
-
-        <section class="section-card" data-section="knowledge-dissemination">
-          <h2>الترجمة ودورها في نشر المعرفة والعلوم</h2>
-          <div class="subsection">
-            <h3>نقل المعرفة العلمية والتكنولوجية</h3>
-            <p>ساهمت تاريخياً في تقدم العلوم عبر الحضارات.</p>
-            <p>تنقل الأبحاث والاكتشافات لسد الفجوة المعرفية.</p>
-            <p>تعزز التعاون العلمي الدولي.</p>
-          </div>
-          <div class="subsection">
-            <h3>دور الترجمة في التعليم والبحث العلمي</h3>
-            <p>توفر المواد التعليمية والبحثية بلغات مختلفة.</p>
-            <p>تدعم التنوع اللغوي في البحث العلمي.</p>
-            <p>تمكن الباحثين من النشر والوصول لجمهور عالمي.</p>
-          </div>
-        </section>
-
-        <section class="section-card" data-section="business-diplomacy">
-          <h2>الترجمة في عالم الأعمال والدبلوماسية</h2>
-          <div class="subsection">
-            <h3>تسهيل التجارة الدولية والتعاون الاقتصادي</h3>
-            <p>تضمن فهماً دقيقاً للعقود والوثائق التجارية.</p>
-            <p>تدعم التوطين لتسويق المنتجات عالمياً.</p>
-            <p>تعزز التواصل في الشركات متعددة الجنسيات.</p>
-          </div>
-          <div class="subsection">
-            <h3>دور الترجمة في العلاقات الدولية والدبلوماسية</h3>
-            <p>تسهل التواصل في المؤتمرات والمفاوضات الدولية.</p>
-            <p>تضمن دقة المعاهدات والاتفاقيات الدولية.</p>
-            <p>تعزز الدبلوماسية العامة وبناء الثقة.</p>
-          </div>
-        </section>
-
-        <section class="section-card" data-section="challenges">
-          <h2>تحديات الترجمة في عصر العولمة</h2>
-          <div class="subsection">
-            <h3>التحديات اللغوية والثقافية</h3>
-            <ul>
-              <li>التعبيرات الاصطلاحية والأمثال تتطلب مكافئات ثقافية</li>
-              <li>المفاهيم الثقافية الخاصة قد تحتاج إلى شرح</li>
-              <li>اختلاف بنية اللغة وقواعدها بين اللغات</li>
-              <li>الفروق في السياق الثقافي والاجتماعي</li>
-              <li>نقل الفكاهة والسخرية يتطلب إبداعاً</li>
-            </ul>
-          </div>
-          <div class="subsection">
-            <h3>التطورات التكنولوجية وتأثيرها على الترجمة</h3>
-            <ul>
-              <li>الترجمة الآلية العصبية تحسن الجودة</li>
-              <li>أدوات CAT تزيد الكفاءة والاتساق</li>
-              <li>تقنيات التعرف على الكلام للترجمة الفورية</li>
-              <li>تطبيقات الهواتف تسهل الترجمة اليومية</li>
-            </ul>
-            <p>الترجمة الآلية تواجه تحديات في السياق والثقافة.</p>
-            <p>التكامل بين الإنسان والآلة هو المستقبل.</p>
-          </div>
-        </section>
-
-        <section class="section-card" data-section="future">
-          <h2>مستقبل الترجمة والتواصل العالمي</h2>
-          <div class="subsection">
-            <h3>اتجاهات مستقبلية في مجال الترجمة</h3>
-            <ul>
-              <li>تحسن جودة الترجمة الآلية مع الذكاء الاصطناعي</li>
-              <li>زيادة التخصص في الترجمة البشرية</li>
-              <li>تكامل أكبر بين الإنسان والآلة</li>
-              <li>توسع في الترجمة متعددة الوسائط</li>
-              <li>اهتمام بالتنوع اللغوي والثقافي</li>
-            </ul>
-          </div>
-          <div class="subsection">
-            <h3>دور الترجمة في بناء عالم أكثر ترابطاً</h3>
-            <p>تدعم التضامن في مواجهة التحديات العالمية.</p>
-            <p>تعزز التفاهم والتسامح بين الثقافات.</p>
-            <p>تمكن الفئات المهمشة من المشاركة العالمية.</p>
-          </div>
-        </section>
-
-        <section class="section-card" data-section="conclusion">
-          <h2>خاتمة</h2>
-          <p>الترجمة جسر ثقافي يربط الشعوب ويعزز التفاهم.</p>
-          <p>تواجه تحديات لكنها تستفيد من التطور التكنولوجي.</p>
-          <p>تبقى أداة حيوية لبناء عالم أكثر ترابطاً.</p>
-        </section>
-
-        <section class="section-card" data-section="references">
-          <h2>المراجع</h2>
-          <ul>
-            <li>Bassnett, S. (2013). Translation Studies (4th ed.). Routledge.</li>
-            <li>Cronin, M. (2003). Translation and Globalization. Routledge.</li>
-            <li>House, J. (2018). Translation: The Basics. Routledge.</li>
-            <li>Pym, A. (2014). Exploring Translation Theories (2nd ed.). Routledge.</li>
-            <li>Venuti, L. (2008). The Translator's Invisibility: A History of Translation (2nd ed.). Routledge.</li>
-            <li>Baker, M., & Saldanha, G. (Eds.). (2020). Routledge Encyclopedia of Translation Studies (3rd ed.). Routledge.</li>
-            <li>Munday, J. (2016). Introducing Translation Studies: Theories and Applications (4th ed.). Routledge.</li>
-          </ul>
-        </section>
-      </div>
-    </article>
-  </main>
-
-  <div id="footer-placeholder"></div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    fetch('/shared/navbar/navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('خطأ في تحميل الناف بار:', error));
-
-    fetch('/shared/footer/footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('خطأ في تحميل footer:', error));
-  </script>
-  <script src="../../../js/floating-icons.js" defer></script>
-
+// ═══════════════════════════════════════════════════════════════════════════════
+// WHATSAPP JS BLOCK
+// ═══════════════════════════════════════════════════════════════════════════════
+const WA_JS = `
   <script>
     /* ===== WhatsApp Panel Logic ===== */
     var waOpen = false;
@@ -402,9 +275,9 @@
       }
       var phone = '201153480793';
       var text  = '';
-      if (name)    text += '\u0627\u0644\u0627\u0633\u0645: ' + name + '\n';
-      if (message) text += '\u0627\u0644\u0631\u0633\u0627\u0644\u0629: ' + message;
-      if (!text)   text  = '\u0645\u0631\u062d\u0628\u064b\u0627\u060c \u0623\u0648\u062f \u0627\u0644\u062a\u0648\u0627\u0635\u0644 \u0645\u0639 \u0641\u0631\u064a\u0642 \u0628\u0646\u0627\u0646.';
+      if (name)    text += '\\u0627\\u0644\\u0627\\u0633\\u0645: ' + name + '\\n';
+      if (message) text += '\\u0627\\u0644\\u0631\\u0633\\u0627\\u0644\\u0629: ' + message;
+      if (!text)   text  = '\\u0645\\u0631\\u062d\\u0628\\u064b\\u0627\\u060c \\u0623\\u0648\\u062f \\u0627\\u0644\\u062a\\u0648\\u0627\\u0635\\u0644 \\u0645\\u0639 \\u0641\\u0631\\u064a\\u0642 \\u0628\\u0646\\u0627\\u0646.';
       document.getElementById('wa-form-area').style.display = 'none';
       document.getElementById('wa-success').classList.add('show');
       setTimeout(function () {
@@ -413,7 +286,7 @@
     }
     (function () {
       var d = new Date(), h = d.getHours(), m = d.getMinutes();
-      var ap = h >= 12 ? '\u0645' : '\u0635';
+      var ap = h >= 12 ? '\\u0645' : '\\u0635';
       h = h % 12 || 12;
       document.getElementById('wa-bubble-time').textContent =
         h + ':' + (m < 10 ? '0' : '') + m + ' ' + ap;
@@ -421,6 +294,118 @@
     document.getElementById('wa-name').addEventListener('keydown', function (e) {
       if (e.key === 'Enter') { e.preventDefault(); document.getElementById('wa-message').focus(); }
     });
-  </script>
-</body>
-</html>
+  <\/script>`;
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// INJECT FUNCTION
+// ═══════════════════════════════════════════════════════════════════════════════
+function injectWhatsApp(content) {
+  // 1. Inject CSS before </head>
+  if (content.includes('</head>')) {
+    content = content.replace('</head>', WA_CSS + '\n</head>');
+  }
+
+  // 2. Inject HTML panel — prefer after navbar placeholder, else after <body>
+  if (content.includes('<div id="navbar-placeholder"></div>')) {
+    content = content.replace(
+      '<div id="navbar-placeholder"></div>',
+      '<div id="navbar-placeholder"></div>' + WA_HTML
+    );
+  } else if (/<body[^>]*>/.test(content)) {
+    content = content.replace(/(<body[^>]*>)/, '$1' + WA_HTML);
+  }
+
+  // 3. Inject JS before </body>
+  if (content.includes('</body>')) {
+    content = content.replace('</body>', WA_JS + '\n</body>');
+  }
+
+  return content;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// FILE SCANNER
+// ═══════════════════════════════════════════════════════════════════════════════
+function collectHtmlFiles(dir, results = []) {
+  let entries;
+  try { entries = fs.readdirSync(dir, { withFileTypes: true }); }
+  catch { return results; }
+  for (const entry of entries) {
+    if (SKIP_DIRS.has(entry.name)) continue;
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) collectHtmlFiles(fullPath, results);
+    else if (entry.isFile() && entry.name.endsWith('.html')) results.push(fullPath);
+  }
+  return results;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// MAIN
+// ═══════════════════════════════════════════════════════════════════════════════
+function main() {
+  const cwd = process.cwd();
+  console.log(bold('\n📂  Project root: ') + cyan(cwd));
+  console.log('🔍  Scanning ALL subfolders for .html files…\n');
+
+  const allFiles = collectHtmlFiles(cwd);
+  if (allFiles.length === 0) {
+    console.error('  No .html files found. Run from the Benaan root folder.\n');
+    process.exit(1);
+  }
+
+  console.log(`    Found ${bold(String(allFiles.length))} HTML files total.\n`);
+  console.log(bold('🔧  Processing…\n'));
+
+  let injected = 0;
+  let skipped  = 0;
+  let errors   = 0;
+
+  for (const filePath of allFiles) {
+    const rel = path.relative(cwd, filePath);
+    try {
+      const raw  = fs.readFileSync(filePath, 'utf8');
+      const crlf = raw.includes('\r\n');
+      const norm = crlf ? raw.replace(/\r\n/g, '\n') : raw;
+
+      // Skip files that already have the panel
+      if (norm.includes('id="wa-trigger"') || norm.includes("id='wa-trigger'")) {
+        console.log(`  ${yellow('⏭  has panel')}  ${rel}`);
+        skipped++;
+        continue;
+      }
+
+      // Only inject into files that have <body> (real HTML pages)
+      if (!norm.includes('<body')) {
+        skipped++;
+        continue;
+      }
+
+      let updated = injectWhatsApp(norm);
+
+      // Restore CRLF if original was Windows
+      if (crlf) updated = updated.replace(/\n/g, '\r\n');
+
+      fs.writeFileSync(filePath, updated, 'utf8');
+      console.log(`  ${green('✅ injected')}  ${rel}`);
+      injected++;
+
+    } catch (err) {
+      console.log(`  ${red('✗  error')}     ${rel} — ${err.message}`);
+      errors++;
+    }
+  }
+
+  console.log(bold(`\n────────────────────────────────────────`));
+  console.log(`  ${green('✅ Injected:  ')} ${bold(String(injected))} file(s)`);
+  console.log(`  ${yellow('⏭  Skipped:   ')} ${bold(String(skipped))} file(s) (already have panel or not a page)`);
+  if (errors) console.log(`  ${red('✗  Errors:    ')} ${errors} file(s)`);
+  console.log(bold(`────────────────────────────────────────\n`));
+
+  if (injected > 0) {
+    console.log(`  🎉  Done! WhatsApp panel added to ${injected} file(s).\n`);
+  } else {
+    console.log(`  ✔  All files already have the panel. Nothing to do.\n`);
+  }
+}
+
+main();
