@@ -1,0 +1,38 @@
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.benaan\.com [NC]
+RewriteRule ^(.*)$ https://benaan.com/$1 [R=301,L]
+
+# ===============================
+# Case Fix Redirects
+# ===============================
+Redirect 301 /pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html https://benaan.com/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html
+Redirect 301 /pages/articles/What-is-data-analysis/What-is-data-analysis.html https://benaan.com/pages/articles/what-is-data-analysis/what-is-data-analysis.html
+
+# ===============================
+# Old/Wrong URLs → Correct Pages
+# ===============================
+Redirect 301 /contact https://benaan.com/pages/contact/contact.html
+Redirect 301 /contact/contact.html https://benaan.com/pages/contact/contact.html
+Redirect 301 /about/about.html https://benaan.com/pages/about/about.html
+Redirect 301 /pages/articles/financial-analysis-company/financial-analysis-company.html https://benaan.com/pages/services/statistical-analysis.html
+Redirect 301 /pages/articles/statistical-hypothesis-testing/statistical-hypothesis-testing.html https://benaan.com/pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html
+Redirect 301 /pages/articles/spss-vs-r-python/spss-vs-r-python.html https://benaan.com/pages/articles/using-statistical-software-spss-r-python/using-statistical-software-spss-r-python.html
+Redirect 301 /pages/articles/data-cleaning-guide/data-cleaning-guide.html https://benaan.com/pages/articles/Methods-of-saving-data/Methods-of-saving-data.html
+Redirect 301 /pages/services/Content%20writing.html https://benaan.com/pages/services/Content-writing.html
+
+# ===============================
+# Broken /allarticles.html/ URLs → Correct Articles
+# ===============================
+Redirect 301 /pages/articles/allarticles.html/pages/articles/effective-training-package-design/effective-training-package-design.html https://benaan.com/pages/services/training-packages.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/importance-of-training-packages/importance-of-training-packages.html https://benaan.com/pages/services/training-packages.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/media-content-proofreading/media-content-proofreading.html https://benaan.com/pages/services/proofreading.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html https://benaan.com/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html https://benaan.com/pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html https://benaan.com/pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/importance-of-certified-translation/importance-of-certified-translation.html https://benaan.com/pages/articles/importance-of-certified-translation/importance-of-certified-translation.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/translation-role-in-cultural-exchange/translation-role-in-cultural-exchange.html https://benaan.com/pages/articles/translation-role-in-cultural-exchange/translation-role-in-cultural-exchange.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/modern-proofreading-techniques/modern-proofreading-techniques.html https://benaan.com/pages/articles/modern-proofreading-techniques/modern-proofreading-techniques.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html https://benaan.com/pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/designing-effective-training-packages/designing-effective-training-packages.html https://benaan.com/pages/articles/designing-effective-training-packages/designing-effective-training-packages.html

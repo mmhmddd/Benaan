@@ -1,5 +1,45 @@
 [
   {
+  "title": "أفضل كتابة محتوى للشركات في السعودية",
+  "description": "اكتشف أسرار أفضل كتابة محتوى للشركات في السعودية لتعزيز علامتك. تقدم بنان خدمة صناعة محتوى للشركات باحترافية تضمن لك التميز.",
+  "category": "كتابة المحتوى",
+  "slug": "/pages/articles/content-writing-saudi/content-writing-saudi.html",
+  "image": "/pages/articles/content-writing-saudi/Picture1.jpg",
+  "imageAlt": "أفضل كتابة محتوى للشركات في السعودية - شركة بنان Benaan",
+  "content": [
+    "أفضل كتابة محتوى للشركات في السعودية",
+    "صناعة محتوى للشركات",
+    "كتابة محتوى بروفايل شركة في السعودية",
+    "كتابة محتوى تسويقي للشركات",
+    "بنان",
+    "Benaan"
+  ]
+  },
+  {
+  "title": "أفضل شركة كتابة محتوى في مصر",
+  "category": "كتابة المحتوى",
+  "content": "احصل على أفضل خدمات كتابة المحتوى الاحترافية مع خبراء في كتابة محتوى عربي إبداعي يعزز ظهورك الرقمي ويجذب عملاءك المستهدفين بدقة ومصداقية. تقدم شركة بنان خدمات كتابة المحتوى التسويقي والمعلوماتي والمتوافق مع SEO للمواقع والمتاجر الإلكترونية.",
+  "image": "/pages/articles/best-content-writing-egypt/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/best-content-writing-egypt/best-content-writing-egypt.html"
+  },
+  {
+    "title": "التحليل الإحصائي باستخدام برنامج EViews خطوة بخطوة",
+    "category": "التحليل الإحصائي",
+    "content": "تعلم أصول التحليل الإحصائي باستخدام برنامج EViews وكيفية بناء النماذج القياسية. تقدم شركة بنان دليلاً حول ما هو EViews وأهميته في تحليل السلاسل الزمنية والبيانات الاقتصادية.",
+    "image": "/pages/articles/eviews-statistical-analysis/Picture1.jpg",
+    "link": "#",
+    "slug": "/pages/articles/eviews-statistical-analysis/eviews-statistical-analysis.html"
+  },
+  {
+    "title": "تحليل البيانات باستخدام power bi خطوة بخطوة",
+    "category": "التحليل الإحصائي",
+    "content": "تعلم كيفية تحليل البيانات باستخدام Power BI خطوة بخطوة. توضح شركة بنان كيفية استخدام Power BI لتحويل البيانات إلى رؤى قيمة، مما يدعم اتخاذ القرارات المستنيرة في الأبحاث العلمية والتطبيقات العملية بكفاءة عالية.",
+    "image": "/pages/articles/power-bi-data-analysis/Picture1.jpg",
+    "link": "#",
+    "slug": "/pages/articles/power-bi-data-analysis/power-bi-data-analysis.html"
+  },
+  {
   "title": "انواع برامج التحليل الاحصائي وأفضل أدوات تحليل البيانات",
   "category": "التحليل الإحصائي",
   "content": "تعرف على أهم انواع برامج التحليل الاحصائي ومميزاتها من SPSS وR وStata وPython وExcel وPower BI. تقدم شركة بنان دليلاً شاملاً حول أفضل برامج تحليل البيانات لضمان دقة نتائجك.",
@@ -43,9 +83,9 @@
     "title": "التحليل الإحصائي باستخدام برنامج Excel خطوة بخطوة",
     "category": "التحليل الإحصائي",
     "content": "تعلم فن التحليل الإحصائي باستخدام برنامج Excel بدقة. توضح شركة بنان كيفية تحليل البيانات باستخدام برنامج Excel لضمان نتائج موثوقة في الأبحاث العلمية والتطبيقات العملية.",
-    "image": "/pages/articles/Statistical-analysis-using-Excel/Picture1.jpg",
+    "image": "/pages/articles/statistical-analysis-using-excel/Picture1.jpg",
     "link": "#",
-    "slug": "/pages/articles/Statistical-analysis-using-Excel/statistical-analysis-using-Excel.html"
+    "slug": "/pages/articles/statistical-analysis-using-excel/statistical-analysis-using-excel.html"
   },
   {
     "title": "شركات تحليل البيانات في مصر",
@@ -61,7 +101,7 @@
     "content": "اكتشف أفضل شركات تحليل البيانات في السعودية ودورها في نمو أعمالك. تقدم شركة بنان Benaan حلول تحليلات بيانات الأعمال بدقة واحترافية عالية.",
     "image": "/assets/images/article/data-analysis-companies-saudi.png",
     "link": "#",
-    "slug": "/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html"
+    "slug": "/pages/articles/sata-analysis-companies-saudi/sata-analysis-companies-saudi.html"
   },
   {
     "title": "التحليل الاقتصادي: المفهوم والأنواع وأدوات التحليل في اتخاذ القرار",

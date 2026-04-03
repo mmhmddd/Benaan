@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التحليل الإحصائي باستخدام برنامج EViews خطوة بخطوة | بنان</title>
+  <meta name="description" content="تعلم أصول التحليل الإحصائي باستخدام برنامج EViews وكيفية بناء النماذج القياسية. تقدم شركة بنان دليلاً حول ما هو EViews وأهميته.">
+  <link rel="canonical" href="https://benaan.com/pages/articles/eviews-statistical-analysis/eviews-statistical-analysis.html">
+  <meta name="keywords" content="التحليل الإحصائي باستخدام برنامج EViews, ما هو EViews, تحليل السلاسل الزمنية باستخدام برنامج EViews, اختبار الارتباط الذاتي EViews, الاحصاءات الوصفية EViews, بنان, Benaan, تحليل إحصائي مصر, خدمات تحليل البيانات">
+  <meta property="og:title" content="التحليل الإحصائي باستخدام برنامج EViews خطوة بخطوة | بنان">
+  <meta property="og:description" content="تعلم أصول التحليل الإحصائي باستخدام برنامج EViews وكيفية بناء النماذج القياسية. تقدم شركة بنان دليلاً حول ما هو EViews وأهميته.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://benaan.com/pages/articles/eviews-statistical-analysis/eviews-statistical-analysis.html">
+  <meta property="og:image" content="https://benaan.com/pages/articles/eviews-statistical-analysis/Picture1.jpg">
+  <meta property="og:site_name" content="بنان">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="التحليل الإحصائي باستخدام برنامج EViews خطوة بخطوة">
+  <meta name="twitter:description" content="تعلم أصول التحليل الإحصائي باستخدام برنامج EViews وكيفية بناء النماذج القياسية مع شركة بنان.">
+  <meta name="twitter:image" content="https://benaan.com/pages/articles/eviews-statistical-analysis/Picture1.jpg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/pages/articles/academic-content-proofreading/academic-content-proofreading.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "التحليل الإحصائي باستخدام برنامج EViews خطوة بخطوة",
+    "description": "تعلم أصول التحليل الإحصائي باستخدام برنامج EViews وكيفية بناء النماذج القياسية. تقدم شركة بنان دليلاً حول ما هو EViews وأهميته.",
+    "url": "https://benaan.com/pages/articles/eviews-statistical-analysis/eviews-statistical-analysis.html",
+    "image": "https://benaan.com/pages/articles/eviews-statistical-analysis/Picture1.jpg",
+    "publisher": { "@type": "Organization", "name": "بنان", "url": "https://benaan.com/" },
+    "keywords": "التحليل الإحصائي باستخدام برنامج EViews, ما هو EViews, تحليل السلاسل الزمنية, بنان, Benaan"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "ما هو برنامج EViews وما أهم استخداماته في التحليل الإحصائي؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "هو برنامج مميز للتحليل الإحصائي والاقتصادي، ويُستخدم في إجراء التحليلات الإحصائية المختلفة، إنشاء الرسوم البيانية، التعامل مع البيانات المالية والاقتصادية، وإجراء توقعات النماذج الاقتصادية."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف يتم تحليل السلاسل الزمنية باستخدام برنامج EViews؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "يُستخدم برنامج EViews لتحليل السلاسل الزمنية لدراسة الاتجاهات والموسمية والأنماط الدورية في البيانات الاقتصادية. يدعم البرنامج نماذج مثل ARIMA وVAR وARDL، والتي تساعد في التنبؤ وفهم العلاقات الديناميكية عبر الزمن."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "كيف يتم إجراء اختبار الارتباط الذاتي في برنامج EViews؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "يمكن للمختصين إجراء اختبار الارتباط الذاتي بسهولة داخل EViews باستخدام أدوات التحليل الإحصائي المدمجة، للتحقق من وجود اعتماد بين القيم الزمنية للبيانات."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ما الفرق بين الإحصاءات الوصفية والتحليل القياسي في برنامج EViews؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "الإحصاءات الوصفية تهتم بتلخيص البيانات مثل المتوسط والانحراف المعياري، بينما التحليل القياسي يشمل اختبارات ومعادلات متقدمة لفهم العلاقات بين المتغيرات، ويفضل الاستعانة بمختص عند التعامل معها."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* =====================================================
+       WHATSAPP PROFESSIONAL SLIDING PANEL
+    ===================================================== */
+    #wa-trigger {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1001;
+      cursor: pointer;
+      user-select: none;
+    }
+    #wa-pill {
+      background: #25D366;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 44px;
+      padding: 22px 0;
+      border-radius: 0 14px 14px 0;
+      box-shadow: 3px 0 18px rgba(37,211,102,0.40);
+      transition: width 0.22s ease, background 0.18s;
+    }
+    #wa-pill:hover { background: #1db954; width: 50px; }
+    #wa-pill-label {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-family: 'Tajawal', sans-serif;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      color: #fff;
+      white-space: nowrap;
+    }
+    #wa-panel {
+      position: fixed;
+      left: -360px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+      width: 320px;
+      background: #fff;
+      border-radius: 0 20px 20px 0;
+      border: 1px solid #e0e0e0;
+      border-left: none;
+      box-shadow: 6px 0 40px rgba(0,0,0,0.14);
+      transition: left 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+      font-family: 'Tajawal', sans-serif;
+    }
+    #wa-panel.open { left: 44px; }
+    #wa-panel-header {
+      background: #075E54;
+      padding: 18px 18px 14px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    #wa-avatar {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    #wa-header-info { flex: 1; }
+    #wa-header-info h3 { color: #fff; font-size: 15px; font-weight: 700; margin: 0 0 3px; }
+    #wa-status { display: flex; align-items: center; gap: 5px; font-size: 12px; color: rgba(255,255,255,0.75); }
+    #wa-status-dot { width: 7px; height: 7px; border-radius: 50%; background: #4ade80; flex-shrink: 0; }
+    #wa-close-btn {
+      position: absolute; top: 12px; left: 12px;
+      width: 28px; height: 28px; border-radius: 50%;
+      background: rgba(255,255,255,0.15); border: none;
+      color: #fff; font-size: 13px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.18s; font-family: inherit;
+    }
+    #wa-close-btn:hover { background: rgba(255,255,255,0.28); }
+    #wa-bubble-area { background: #ECE5DD; padding: 16px 14px 14px; }
+    #wa-bubble {
+      background: #fff;
+      border-radius: 0 12px 12px 12px;
+      padding: 10px 13px 8px;
+      font-size: 13px; color: #333; line-height: 1.6;
+      max-width: 92%; position: relative;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.09);
+    }
+    #wa-bubble::before {
+      content: ''; position: absolute; top: 0; right: 100%;
+      border: 6px solid transparent;
+      border-top-color: #fff; border-right-color: #fff;
+    }
+    #wa-bubble-time { font-size: 10px; color: #999; text-align: left; margin-top: 5px; direction: ltr; }
+    #wa-form-area {
+      padding: 14px 16px 12px; background: #f9fafb;
+      border-top: 1px solid #efefef;
+      display: flex; flex-direction: column; gap: 9px;
+    }
+    #wa-form-area input,
+    #wa-form-area textarea {
+      width: 100%; border: 1.5px solid #e5e7eb; border-radius: 10px;
+      padding: 9px 13px; font-family: 'Tajawal', sans-serif;
+      font-size: 13px; color: #222; background: #fff; outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      direction: rtl; resize: none; box-sizing: border-box;
+    }
+    #wa-form-area input:focus,
+    #wa-form-area textarea:focus { border-color: #25D366; box-shadow: 0 0 0 3px rgba(37,211,102,0.12); }
+    #wa-form-area input.wa-error { border-color: #ef4444; }
+    #wa-send-btn {
+      background: #25D366; color: #fff; border: none; border-radius: 10px;
+      padding: 11px 16px; font-family: 'Tajawal', sans-serif;
+      font-size: 13.5px; font-weight: 700; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: background 0.18s, transform 0.12s;
+    }
+    #wa-send-btn:hover { background: #1db954; }
+    #wa-send-btn:active { transform: scale(0.97); }
+    #wa-success {
+      display: none; flex-direction: column; align-items: center;
+      text-align: center; gap: 10px; padding: 26px 20px 22px;
+      background: #f9fafb; border-top: 1px solid #efefef;
+    }
+    #wa-success.show { display: flex; }
+    #wa-success-icon {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: #dcfce7; display: flex; align-items: center; justify-content: center;
+    }
+    #wa-success strong { font-size: 15px; color: #15803d; font-weight: 700; }
+    #wa-success p { font-size: 12.5px; color: #666; line-height: 1.6; margin: 0; }
+    #wa-footer {
+      text-align: center; font-size: 11px; color: #b0b0b0;
+      padding: 7px 16px 11px; background: #f9fafb;
+      border-top: 1px solid #f0f0f0;
+      display: flex; align-items: center; justify-content: center; gap: 5px;
+    }
+    @media (max-width: 820px) {
+      #wa-trigger { top: 50%; transform: translateY(-50%); left: 0; bottom: auto; }
+      #wa-pill { flex-direction: column; width: 40px; padding: 18px 0; border-radius: 0 12px 12px 0; gap: 8px; }
+      #wa-pill:hover { width: 46px; }
+      #wa-pill-label { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11px; }
+      #wa-panel { left: -310px; top: 50%; bottom: auto; transform: translateY(-50%); border-radius: 0 16px 16px 0; border: 1px solid #e0e0e0; border-left: none; width: 290px; }
+      #wa-panel.open { left: 40px; }
+    }
+
+    /* Article images */
+    .article-img-block { width: 90%; margin: 22px auto; text-align: center; }
+    .article-img-block img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 18px rgba(0,0,0,0.09); display: block; margin: 0 auto; }
+    .article-img-block figcaption { font-size: 0.86rem; color: #888; margin-top: 8px; font-family: 'Tajawal', sans-serif; }
+  </style>
+  <link rel="stylesheet" href="../../../css/floating-icons.css">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <!-- ===== WHATSAPP TRIGGER TAB ===== -->
+  <div id="wa-trigger" onclick="waToggle()">
+    <div id="wa-pill">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.054 23.077a.75.75 0 0 0 .916.916l5.215-1.478A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.933 0-3.741-.525-5.293-1.44l-.38-.225-3.936 1.115 1.115-3.937-.225-.38A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+      </svg>
+      <span id="wa-pill-label">تواصل معنا</span>
+    </div>
+  </div>
+
+  <!-- ===== WHATSAPP SLIDING PANEL ===== -->
+  <div id="wa-panel">
+    <div id="wa-panel-header">
+      <button id="wa-close-btn" onclick="waToggle()">&#10005;</button>
+      <div id="wa-avatar">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+        </svg>
+      </div>
+      <div id="wa-header-info">
+        <h3>فريق بنان Benaan</h3>
+        <div id="wa-status">
+          <span id="wa-status-dot"></span>
+          <span>متاح الآن للرد</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="wa-bubble-area">
+      <div id="wa-bubble">
+        مرحبًا! 👋<br>
+        كيف يمكننا مساعدتك في خدمات التحليل الإحصائي والمالي؟ أرسل لنا رسالتك وسنرد عليك فورًا.
+        <div id="wa-bubble-time"></div>
+      </div>
+    </div>
+
+    <div id="wa-form-area">
+      <input type="text" id="wa-name" placeholder="اسمك الكريم" maxlength="60" />
+      <textarea id="wa-message" rows="3" placeholder="رسالتك أو استفسارك..."></textarea>
+      <button id="wa-send-btn" onclick="waSend()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L.054 23.077a.75.75 0 0 0 .916.916l5.215-1.478A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.933 0-3.741-.525-5.293-1.44l-.38-.225-3.936 1.115 1.115-3.937-.225-.38A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        </svg>
+        إرسال عبر واتساب
+      </button>
+    </div>
+
+    <div id="wa-success">
+      <div id="wa-success-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+      </div>
+      <strong>تم الإرسال بنجاح!</strong>
+      <p>سيتواصل معك فريق بنان عبر واتساب<br>في أقرب وقت ممكن.</p>
+    </div>
+
+    <div id="wa-footer">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="#b0b0b0">
+        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+      </svg>
+      محادثتك آمنة ومشفرة
+    </div>
+  </div>
+  <!-- ===== END WHATSAPP PANEL ===== -->
+
+  <main class="article-page">
+    <header class="article-header">
+      <div class="shape"></div>
+      <h1>التحليل الإحصائي باستخدام برنامج EViews خطوة بخطوة</h1>
+      <p class="subtitle">تعلم أصول التحليل الإحصائي باستخدام برنامج EViews وكيفية بناء النماذج القياسية مع شركة بنان Benaan</p>
+    </header>
+
+    <article id="articleContent" class="article-content">
+      <div class="content-wrapper">
+
+        <!-- صورة الغلاف -->
+        <section class="section-card">
+          <figure class="article-img-block">
+            <img
+              src="/pages/articles/eviews-statistical-analysis/Picture1.jpg"
+              alt="التحليل الإحصائي باستخدام برنامج EViews - شركة بنان Benaan"
+              width="800"
+              loading="eager"
+            />
+            <figcaption>التحليل الإحصائي باستخدام برنامج EViews - شركة بنان Benaan</figcaption>
+          </figure>
+        </section>
+
+        <!-- المقدمة -->
+        <section class="section-card" data-section="intro">
+          <h2>المقدمة:</h2>
+          <p>يعد التحليل الإحصائي باستخدام برنامج EViews الأداة الأقوى والأكثر تخصصاً في مجال الاقتصاد القياسي وتحليل البيانات المالية، حيث يوفر مرونة فائقة في التعامل مع النماذج الرياضية المعقدة. يهدف هذا المقال إلى توضيح كيفية استخدام برنامج EViews في معالجة البيانات الضخمة والتنبؤ بالمتغيرات المستقبلية بدقة عالية. سنستعرض من خلاله أهم الأدوات التي يوفرها البرنامج للباحثين والمحللين الماليين، مع التركيز على المنهجيات العلمية المتبعة في بناء واختبار الفرضيات الاقتصادية لضمان نتائج رصينة وموثوقة علمياً.</p>
+          <p>وتنفرد شركة بنان (Benaan) بتقديم تدريب واحترافية عالية توضح ما هو EViews وكيفية توظيفه في تحليل السلاسل الزمنية باستخدام برنامج EViews. نحن في بنان نساعدك في فهم أنواع البيانات والمتغيرات في برنامج EViews، مما يضمن لشركتك تحليلاً قياسياً دقيقاً يضعك في صدارة المؤسسات المعتمدة على البيانات في نموها وتطورها المستقبلي.</p>
+          <p><a href="https://benaan.com/pages/services/statistical-analysis.html"><strong>خدمة تحليل البيانات</strong></a> تساعدك على فهم أعمق للبيانات واتخاذ قرارات استراتيجية مبنية على معلومات دقيقة.</p>
+        </section>
+
+        <!-- ما هو برنامج EViews -->
+        <section class="section-card" data-section="what-is-eviews">
+          <h2>ما هو برنامج EViews ولماذا يستخدم في التحليل الإحصائي والاقتصادي؟</h2>
+          <p>برنامج EViews (Econometric Views) هو حزمة برمجية متخصصة مصممة للتحليل الإحصائي والاقتصادي القياسي وتحليل السلاسل الزمنية، يستخدمه الباحثون والاقتصاديون والمحللون على نطاق واسع لتقدير النماذج الاقتصادية واختبار الفرضيات وتحليل البيانات بكفاءة. يوفر البرنامج واجهة سهلة الاستخدام إلى جانب أدوات قوية لتحليل الانحدار والتنبؤ والمحاكاة، مما يجعله مناسبًا بشكل خاص للتعامل مع البيانات الاقتصادية والبحوث الكمية المعقدة.</p>
+        </section>
+
+        <!-- أهمية برنامج EViews -->
+        <section class="section-card" data-section="importance">
+          <h2>أهمية التحليل الإحصائي باستخدام برنامج EViews في الأبحاث والدراسات الاقتصادية</h2>
+          <p>يلعب التحليل الإحصائي باستخدام برنامج EViews دورًا محوريًا في البحوث الاقتصادية، إذ يتيح تفسير البيانات بدقة واتخاذ القرارات بناءً على الأدلة. فهو يساعد الباحثين على اختبار النماذج النظرية، ودراسة العلاقات بين المتغيرات، ووضع تنبؤات موثوقة. كما يعزز برنامج EViews مصداقية الدراسات التجريبية من خلال توفير تقنيات اقتصادية قياسية متقدمة، والحد من الأخطاء البشرية في الحسابات.</p>
+        </section>
+
+        <!-- صورة ثانية -->
+        <section class="section-card">
+          <figure class="article-img-block">
+            <img
+              src="/pages/articles/eviews-statistical-analysis/Picture2.jpg"
+              alt="أنواع البيانات والمتغيرات في برنامج EViews - بنان"
+              width="700"
+              loading="lazy"
+            />
+            <figcaption>أنواع البيانات والمتغيرات في برنامج EViews</figcaption>
+          </figure>
+        </section>
+
+        <!-- أنواع البيانات -->
+        <section class="section-card" data-section="data-types">
+          <h2>أنواع البيانات والمتغيرات في برنامج EViews</h2>
+          <p>يدعم برنامج EViews أنواعًا مختلفة من البيانات، بما في ذلك البيانات المقطعية (cross-sectional data)، وبيانات السلاسل الزمنية (time-series data)، وبيانات المقطعية الزمنية (Panel data). كما يتيح للمستخدمين العمل مع أنواع مختلفة من المتغيرات، مثل المتغيرات التابعة، والمتغيرات المستقلة، والمتغيرات الصورية، والمتغيرات المتأخرة. هذه المرونة تجعله مناسبًا لمجموعة واسعة من التحليلات الاقتصادية والإحصائية.</p>
+          <p><a href="https://benaan.com/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html"><strong>شركات تحليل البيانات في السعودية</strong></a> تقدم حلول متقدمة لتحويل البيانات إلى رؤى عملية تدعم نمو الأعمال واتخاذ القرار السليم.</p>
+        </section>
+
+        <!-- كيفية الاستخدام -->
+        <section class="section-card" data-section="how-to-use">
+          <h2>كيفية استخدام برنامج EViews في التحليل الإحصائي</h2>
+          <p>يتضمن استخدام برنامج EViews استيراد البيانات أو إدخالها، وتحديد المتغيرات، واختيار الأساليب الإحصائية المناسبة. يمكن للمستخدمين إجراء تحليل الانحدار، واختبار الفرضيات، وعرض البيانات بصريًا من خلال أوامر بسيطة أو خيارات قائمة. كما يوفر البرنامج أدوات لتشخيص أداء النموذج وضمان صحة النتائج.</p>
+
+          <h2>خطوات إجراء التحليل الإحصائي باستخدام برنامج EViews</h2>
+          <p>تبدأ العملية بإعداد البيانات وتنظيفها، ثم اختيار النموذج المناسب بناءً على هدف البحث. بعد ذلك، يُقدَّر النموذج باستخدام أدوات EViews، وتُجرى اختبارات تشخيصية للتحقق من صحة النتائج، وأخيرًا تُفسَّر النتائج وتُعرض في جداول ورسوم بيانية.</p>
+          <p><a href="https://benaan.com/pages/articles/data-analysis-companies-egypt/data-analysis-companies-egypt.html"><strong>شركات تحليل البيانات في مصر</strong></a> توفر خبرات واسعة وأدوات حديثة لتحليل البيانات وتحويلها إلى نتائج قابلة للتنفيذ.</p>
+        </section>
+
+        <!-- الإحصاءات الوصفية -->
+        <section class="section-card" data-section="descriptive-stats">
+          <h2>إجراء الإحصاءات الوصفية في برنامج EViews وتحليل خصائص البيانات</h2>
+          <p>يُمكّن برنامج EViews المستخدمين من حساب الإحصاءات الوصفية مثل المتوسط، والوسيط، والانحراف المعياري، والالتواء، والتفرطح. تساعد هذه المقاييس الباحثين على فهم الخصائص الأساسية للبيانات، وتحديد الأنماط، والكشف عن القيم الشاذة قبل إجراء تحليلات أكثر تقدماً.</p>
+
+          <h2>اختبار التوزيع الطبيعي في برنامج EViews وأهميته في التحليل الإحصائي</h2>
+          <p>يُوفر برنامج EViews اختبارات مثل اختبار جارك-بيرا لتقييم ما إذا كانت البيانات تتبع التوزيع الطبيعي. يُعد اختبار التوزيع الطبيعي مهمًا لأن العديد من النماذج الإحصائية تفترض أن الأخطاء موزعة توزيعًا طبيعيًا. إذا انحرفت البيانات بشكل كبير عن التوزيع الطبيعي، فقد تكون نتائج التحليل غير موثوقة.</p>
+        </section>
+
+        <!-- صورة ثالثة -->
+        <section class="section-card">
+          <figure class="article-img-block">
+            <img
+              src="/pages/articles/eviews-statistical-analysis/Picture3.jpg"
+              alt="تحليل السلاسل الزمنية باستخدام برنامج EViews - بنان Benaan"
+              width="700"
+              loading="lazy"
+            />
+            <figcaption>تحليل السلاسل الزمنية باستخدام برنامج EViews</figcaption>
+          </figure>
+        </section>
+
+        <!-- الارتباط الذاتي -->
+        <section class="section-card" data-section="autocorrelation">
+          <h2>اختبار الارتباط الذاتي باستخدام EViews وتحليل العلاقات بين المتغيرات</h2>
+          <p>يتضمن برنامج EViews أدوات مثل إحصائية دوربين-واتسون واختبار برويش-غودفري للكشف عن الارتباط الذاتي في البواقي. يشير الارتباط الذاتي إلى وجود ترابط بين حدود الخطأ بمرور الوقت، مما قد يؤدي إلى تقديرات متحيزة. ويؤدي تحديد هذه المشكلة وتصحيحها إلى تحسين دقة النموذج.</p>
+          <p>التعلم العملي للقراءة الدقيقة للبيانات ممكن من خلال <a href="https://benaan.com/pages/articles/statistical-analysis-using-excel/statistical-analysis-using-excel.html"><strong>التحليل الإحصائي باستخدام برنامج Excel</strong></a> لتسهيل اتخاذ القرارات الذكية.</p>
+        </section>
+
+        <!-- السلاسل الزمنية -->
+        <section class="section-card" data-section="time-series">
+          <h2>تحليل السلاسل الزمنية باستخدام برنامج EViews في الدراسات الاقتصادية</h2>
+          <p>يُستخدم برنامج EViews على نطاق واسع لتحليل السلاسل الزمنية، مما يسمح للباحثين بدراسة الاتجاهات والموسمية والأنماط الدورية في البيانات الاقتصادية. وهو يدعم نماذج مثل ARIMA وVAR وARDL، والتي تُعدّ أساسية للتنبؤ وفهم العلاقات الديناميكية عبر الزمن.</p>
+          <p>تحصل على رؤى دقيقة وحلول متكاملة عند الاعتماد على <a href="https://benaan.com/pages/articles/data-analysis-using-SPSS-software/data-analysis-using-SPSS-software.html"><strong>التحليل الإحصائي للبيانات باستخدام برنامج SPSS</strong></a> باحترافية عالية.</p>
+
+          <h2>تحليل بيانات المقطعية الزمنية باستخدام برنامج EViews في الدراسات الاقتصادية</h2>
+          <p>يجمع تحليل panel data في برنامج EViews بين بُعدي البيانات المقطعية والسلاسل الزمنية، مما يتيح للباحثين تحليل كيانات متعددة (مثل الدول أو الشركات أو الأفراد) على مدى فترات زمنية مختلفة. يُعد هذا النوع من التحليل ذا قيمة خاصة في الدراسات الاقتصادية لأنه يُجسّد التباين الفردي والتغيرات الديناميكية بمرور الوقت، مما يُؤدي إلى نتائج أكثر دقة وموثوقية. يوفر برنامج EViews تقنيات متقدمة لنمذجة panel data، بما في ذلك التأثيرات الثابتة (fixed effects) والتأثيرات العشوائية (random effects) في نموذج OLS ونموذج GMM (Generalized Method of Moments)، ونموذج Panel ARDL وغيرها من النماذج الأخرى مما يُمكّن الباحثين من التحكم في المتغيرات غير المرصودة وتقليل التحيز. باستخدام panel data في برنامج EViews، يستطيع المحللون فهم العلاقات الاقتصادية المعقدة بشكل أفضل، وتحسين كفاءة التقدير، وتقديم توصيات سياساتية أكثر موثوقية.</p>
+        </section>
+
+        <!-- النماذج القياسية والاختبارات -->
+        <section class="section-card" data-section="models-tests">
+          <h2>استخدام برنامج EViews في النماذج القياسية وتحليل البيانات الاقتصادية</h2>
+          <p>يُعد برنامج EViews أساسيًا لتقدير النماذج الاقتصادية القياسية مثل الانحدار الخطي، ونماذج البيانات المقطعية الزمنية، ونماذج التكامل المشترك. فهو يساعد في تحليل العلاقات السببية بين المتغيرات الاقتصادية، ويوفر أدوات قوية لتحليل السياسات والتنبؤ بها.</p>
+
+          <h2>أهم الاختبارات الإحصائية التي يوفرها برنامج EViews لتحليل البيانات</h2>
+          <p>يُقدّم برنامج EViews مجموعة واسعة من الاختبارات الإحصائية، بما في ذلك اختبارات جذر الوحدة (ADF، PP)، واختبارات التكامل المشترك (Johansen، Pedroni)، واختبارات التباين غير المتجانس (White، ARCH)، وتشخيصات الارتباط الخطي المتعدد. تضمن هذه الاختبارات استيفاء النماذج للافتراضات المطلوبة للاستدلال الصحيح.</p>
+        </section>
+
+        <!-- لماذا بنان -->
+        <section class="section-card" data-section="why-benaan">
+          <h2>لماذا تختار شركة بنان لتنفيذ التحليل الإحصائي باستخدام برنامج EViews؟</h2>
+          <p>يمكن اختيار شركة بنان لما تتمتع به من خبرة في التحليل الإحصائي والاقتصادي القياسي، حيث تقدم نتائج دقيقة وموثوقة. تستخدم الشركة أدوات متطورة مثل برنامج EViews لتقديم دعم بحثي عالي الجودة، مما يضمن إجراء التحليلات باحترافية وكفاءة.</p>
+
+          <h2>خدمات شركة بنان في التحليل الإحصائي والاقتصاد القياسي باستخدام EViews</h2>
+          <p>تقدم شركة بنان خدمات متنوعة تشمل تنظيف البيانات، وتقدير النماذج، واختبار الفرضيات، وإعداد التقارير. كما تدعم الشركة الباحثين الأكاديميين والشركات من خلال توفير حلول تحليلية مخصصة باستخدام برنامج EViews وأدوات إحصائية أخرى.</p>
+
+          <h2>متى يحتاج الباحث أو الشركة إلى متخصص في تحليل البيانات باستخدام EViews؟</h2>
+          <p>يحتاج الباحث أو الشركة إلى متخصص عند التعامل مع مجموعات البيانات المعقدة، أو النماذج الاقتصادية القياسية المتقدمة، أو عند نقص الخبرة التقنية. يضمن المتخصصون اختيار النموذج الأمثل، والتفسير الصحيح للنتائج، ومخرجات عالية الجودة مناسبة للأغراض الأكاديمية أو المهنية.</p>
+          <p>للحصول على أفضل النتائج والدقة العالية يمكنك الاستعانة بـ <a href="https://benaan.com/pages/articles/banan-top-spss-analyst-in-saudi/banan-top-spss-analyst-in-saudi.html"><strong>أفضل محلل إحصائي SPSS في السعودية</strong></a> لتقديم تحليل متقدم.</p>
+        </section>
+
+        <!-- الخاتمة -->
+        <section class="section-card" data-section="conclusion">
+          <h2>الخاتمة:</h2>
+          <p>في الختام، يمثل برنامج EViews حجر الزاوية في فهم الظواهر الاقتصادية والمالية المعاصرة. لقد استعرضنا في هذا المقال كفاءة البرنامج في استخراج الإحصاءات الوصفية EViews، وكيفية إجراء اختبار التوزيع الطبيعي EViews، مؤكدين أن إتقان هذه الأدوات هو السبيل الأضمن لتحويل البيانات التاريخية إلى رؤى استراتيجية تدعم استدامة المشاريع وتفوقها في سوق العمل المتقلب.</p>
+        </section>
+
+        <!-- الأسئلة الشائعة -->
+        <section class="section-card" data-section="faq">
+          <h2>الأسئلة الشائعة:</h2>
+
+          <h3>ما هو برنامج EViews وما أهم استخداماته في التحليل الإحصائي؟</h3>
+          <p>هو برنامج مميز للتحليل الإحصائي والاقتصادي، ويُستخدم في إجراء التحليلات الإحصائية المختلفة، إنشاء الرسوم البيانية، التعامل مع البيانات المالية والاقتصادية، وإجراء توقعات النماذج الاقتصادية.</p>
+
+          <h3>كيف يتم تحليل السلاسل الزمنية باستخدام برنامج EViews؟</h3>
+          <p>يُستخدم برنامج EViews على نطاق واسع لتحليل السلاسل الزمنية، مما يسمح للباحثين بدراسة الاتجاهات والموسمية والأنماط الدورية في البيانات الاقتصادية. وهو يدعم نماذج مثل ARIMA وVAR وARDL، والتي تُعدّ أساسية للتنبؤ وفهم العلاقات الديناميكية عبر الزمن.</p>
+
+          <h3>كيف يتم إجراء اختبار الارتباط الذاتي في برنامج EViews؟</h3>
+          <p>يمكن للمختصين إجراء اختبار الارتباط الذاتي بسهولة داخل EViews باستخدام أدوات التحليل الإحصائي المدمجة، للتحقق من وجود اعتماد بين القيم الزمنية للبيانات.</p>
+
+          <h3>ما الفرق بين الإحصاءات الوصفية والتحليل القياسي في برنامج EViews؟</h3>
+          <p>الإحصاءات الوصفية تهتم بتلخيص البيانات مثل المتوسط والانحراف المعياري، بينما التحليل القياسي يشمل اختبارات ومعادلات متقدمة لفهم العلاقات بين المتغيرات، ويفضل الاستعانة بمختص عند التعامل معها.</p>
+        </section>
+
+        <!-- الرسالة التسويقية -->
+        <section class="section-card" data-section="marketing">
+          <h2>هل ترغب في إجراء تحليل اقتصادي قياسي خالي من الأخطاء باستخدام برنامج EViews؟</h2>
+          <p>تتميز شركة بنان (Benaan) بخبرتها العميقة في التحليل الإحصائي باستخدام برنامج EViews، حيث نقدم حلولاً تقنية تشمل إجراء اختبار الارتباط الذاتي EViews بدقة متناهية لضمان سلامة نماذجك. نحن ندرك تماماً ما هو EViews وكيفية تطويع أدواته لخدمة أهدافك البحثية والمالية. مع فريق "بنان" المتخصص، ستمتلك تقارير تحليلية مبنية على تحليل السلاسل الزمنية باستخدام برنامج EViews باحترافية تضمن لك التميز. لا تتردد في طلب استشارتك الآن.</p>
+          <p><strong>اجعل أرقامك تتحدث لغة الاقتصاد الصحيحة وتواصل مع خبراء بنان:</strong></p>
+          <ul>
+            <li><strong>واتساب:</strong> 002001153480793</li>
+            <li><strong>البريد الإلكتروني:</strong> economicbusinesscompany@gmail.com</li>
+            <li><strong>الموقع الإلكتروني:</strong> <a href="https://benaan.com/">https://benaan.com/</a></li>
+          </ul>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    fetch("/shared/navbar/navbar.html")
+      .then(r => r.text()).then(d => { document.getElementById("navbar-placeholder").innerHTML = d; })
+      .catch(e => console.error(e));
+    fetch("/shared/footer/footer.html")
+      .then(r => r.text()).then(d => { document.getElementById("footer-placeholder").innerHTML = d; })
+      .catch(e => console.error(e));
+
+    /* ===== WhatsApp Panel Logic ===== */
+    var waOpen = false;
+
+    function waToggle() {
+      waOpen = !waOpen;
+      document.getElementById('wa-panel').classList.toggle('open', waOpen);
+    }
+
+    function waSend() {
+      var name    = document.getElementById('wa-name').value.trim();
+      var message = document.getElementById('wa-message').value.trim();
+      var nameEl  = document.getElementById('wa-name');
+
+      if (!name && !message) {
+        nameEl.classList.add('wa-error');
+        nameEl.focus();
+        setTimeout(function () { nameEl.classList.remove('wa-error'); }, 1600);
+        return;
+      }
+
+      var phone = '201153480793';
+      var text  = '';
+      if (name)    text += 'الاسم: ' + name + '\n';
+      if (message) text += 'الرسالة: ' + message;
+      if (!text)   text  = 'مرحبًا، أود التواصل مع فريق بنان.';
+
+      document.getElementById('wa-form-area').style.display = 'none';
+      document.getElementById('wa-success').classList.add('show');
+
+      setTimeout(function () {
+        window.open('https://wa.me/' + phone + '?text=' + encodeURIComponent(text), '_blank');
+      }, 650);
+    }
+
+    /* Auto-set bubble timestamp */
+    (function () {
+      var d = new Date(), h = d.getHours(), m = d.getMinutes();
+      var ap = h >= 12 ? 'م' : 'ص';
+      h = h % 12 || 12;
+      document.getElementById('wa-bubble-time').textContent =
+        h + ':' + (m < 10 ? '0' : '') + m + ' ' + ap;
+    })();
+
+    /* Enter in name field → jump to message textarea */
+    document.getElementById('wa-name').addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); document.getElementById('wa-message').focus(); }
+    });
+  </script>
+  <script src="../../../js/floating-icons.js" defer></script>
+</body>
+</html>

@@ -117,4 +117,7 @@
     width: 20px;
     height: 20px;
   }
+}/* Call Button */
+.floating-icon-btn.call {
+  background-color: #3b82f6;
 }

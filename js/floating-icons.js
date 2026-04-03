@@ -1,26 +1,16 @@
-/**
- * Floating Icons Component
- * Adds 3 floating action buttons to the bottom-left corner:
- * 1. Copy Link (blue)
- * 2. WhatsApp (green)
- * 3. Contact Page (dark blue)
- *
- * Usage: include this script + floating-icons.css in any page.
- * Set WHATSAPP_NUMBER below to your number.
- */
-
 (function () {
   const WHATSAPP_NUMBER = '201153480793';
+  const CALL_NUMBER     = '201153480793'; // ← change to your call number
   const CONTACT_PAGE   = '/pages/contact/contact.html';
 
   const icons = [
     {
-      cls: 'copy-link',
-      tooltip: 'نسخ الرابط',
-      ariaLabel: 'نسخ رابط الصفحة',
-      href: null, // handled by JS
+      cls: 'call',
+      tooltip: 'اتصل بنا',
+      ariaLabel: 'اتصل بنا',
+      href: `tel:+${CALL_NUMBER}`,
       svg: `<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/>
+              <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
             </svg>`,
     },
     {
@@ -44,7 +34,6 @@
   ];
 
   function buildWidget() {
-    // Avoid duplicate injection
     if (document.getElementById('floating-icons-wrapper')) return;
 
     const wrapper = document.createElement('div');
@@ -57,24 +46,10 @@
       btn.setAttribute('aria-label', ariaLabel);
       btn.setAttribute('data-tooltip', tooltip);
       btn.innerHTML = svg;
-
-      if (href) {
-        btn.href = href;
-        if (href.startsWith('http')) btn.target = '_blank';
+      btn.href = href;
+      if (href.startsWith('http')) {
+        btn.target = '_blank';
         btn.rel = 'noopener noreferrer';
-      } else {
-        btn.href = '#';
-        btn.addEventListener('click', function (e) {
-          e.preventDefault();
-          navigator.clipboard.writeText(window.location.href).then(() => {
-            btn.classList.add('copied');
-            btn.setAttribute('data-tooltip', 'تم النسخ!');
-            setTimeout(() => {
-              btn.classList.remove('copied');
-              btn.setAttribute('data-tooltip', 'نسخ الرابط');
-            }, 2000);
-          });
-        });
       }
 
       wrapper.appendChild(btn);

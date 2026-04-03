@@ -1,83 +1,134 @@
-
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer - Benaan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+</head>
 <body>
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-item">
-                <div class="logo-container">
-                    <img class="logo" src="/assets/images/home/whitebglogo.jpg" alt="شعار شركة بنان">
-                    <h2 class="company-title">Benaan</h2>
-                </div>
-                <p class="footer-text">
-                    شركة بنان تقدم خدمات احترافية في  التحليل الاحصائي والقياسي والمالي، الترجمة، وإعداد الحقائب التدريبية وكتابه المحتوي منذ 2020.
-                </p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/b0enaan" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://x.com/b_enaane" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/b_enaan" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@ebcgroub" target="_blank" rel="noopener noreferrer" class="social-link">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-item">
-                <ul class="footer-links">
-                    <li><a href="/pages/services/allServices.html">الخدمات</a></li>
-                    <li><a href="/pages/about/about.html">عن الشركة</a></li>
-                    <li><a href="/pages/articles/allarticles.html">المقالات</a></li>
-                    <li><a href="/pages/contact/contact.html">اتصل بنا</a></li>
-                </ul>
-            </div>
-            <div class="footer-item">
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <a href="tel:+201153480793" dir="ltr">+201153480793</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:info@benaan.com">info@benaan.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <a href="https://www.google.com/maps?q=24.6408,46.7728" target="_blank" rel="noopener noreferrer">
-                        المملكة العربية السعودية, Riyadh
-                    </a>
-                </div>
-                <div class="payment-methods">
-                    <div class="payment-item">
-                        <img class="payment-img" src="/assets/images/footer/vodafon-cash.webp" alt="فودافون كاش">
-                    </div>
-                    <div class="payment-item">
-                        <img class="payment-img" src="/assets/images/footer/etisalat-cash.webp" alt="اتصالات كاش">
-                    </div>
-                    <div class="payment-item">
-                        <img class="payment-img" src="/assets/images/footer/paypal.webp" alt="باي بال">
-                    </div>
-                    <div class="payment-item">
-                        <img class="payment-img" src="/assets/images/footer/instapay.webp" alt="إنستاباي">
-                    </div>
-                    <div class="payment-item">
-                        <img class="payment-img" src="/assets/images/footer/Fawry.webp" alt="فوري">
-                    </div>
-                    <div class="payment-item">
-                        <img class="payment-img" src="/assets/images/footer/master-card.webp" alt="ماستركارد">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© <span class="year" id="year"></span> شركة بنان - جميع الحقوق محفوظة.</p>
-        </div>
-    </footer>
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  <script src="../../js/floating-icons.js" defer></script>
 
-  
+<footer class="ft">
+    <div class="ft-bg"></div>
+
+    <div class="ft-grid">
+
+        <!-- COL 1 : BRAND -->
+        <div class="col-brand">
+            <div class="brand-logo">
+                <img src="/assets/images/home/whitebglogo.jpg" alt="شعار بنان">
+                <h2>بنان<span>.</span></h2>
+            </div>
+
+            <p class="brand-desc">
+                شركة بنان تقدم خدمات احترافية في التحليل الإحصائي والقياسي والمالي،
+                الترجمة، وإعداد الحقائب التدريبية وكتابة المحتوى منذ عام 2020.
+            </p>
+
+            <div class="socials">
+                <a href="https://www.facebook.com/b0enaan" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/b_enaane" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="X">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/b_enaan" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@ebcgroub" target="_blank" rel="noopener noreferrer" class="soc-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <p class="pay-label">وسائل الدفع</p>
+            <div class="pay-row">
+                <div class="pay-item"><img src="/assets/images/footer/vodafon-cash.webp"  alt="فودافون كاش"></div>
+                <div class="pay-item"><img src="/assets/images/footer/etisalat-cash.webp" alt="اتصالات كاش"></div>
+                <div class="pay-item"><img src="/assets/images/footer/paypal.webp"         alt="باي بال"></div>
+                <div class="pay-item"><img src="/assets/images/footer/instapay.webp"       alt="إنستاباي"></div>
+                <div class="pay-item"><img src="/assets/images/footer/Fawry.webp"          alt="فوري"></div>
+                <div class="pay-item"><img src="/assets/images/footer/master-card.webp"    alt="ماستركارد"></div>
+            </div>
+        </div>
+
+        <!-- COL 2 : SERVICES -->
+        <div>
+            <h3 class="col-heading">الخدمات</h3>
+            <ul class="link-list">
+                <li><a href="/pages/services/statistical-analysis.html"><span class="arr"><i class="fas fa-chevron-left"></i></span>التحليل الإحصائي</a></li>
+                <li><a href="/pages/services/translation.html"><span class="arr"><i class="fas fa-chevron-left"></i></span>الترجمة</a></li>
+                <li><a href="/pages/services/training-packages.html"><span class="arr"><i class="fas fa-chevron-left"></i></span>الحقائب التدريبية</a></li>
+                <li><a href="/pages/services/Content-writing.html"><span class="arr"><i class="fas fa-chevron-left"></i></span>كتابة المحتوى</a></li>
+                <li><a href="/pages/services/proofreading.html"><span class="arr"><i class="fas fa-chevron-left"></i></span>التدقيق اللغوي</a></li>
+                <li><a href="/pages/services/allServices.html"><span class="arr"><i class="fas fa-chevron-left"></i></span>جميع الخدمات</a></li>
+            </ul>
+        </div>
+
+        <!-- COL 3 : QUICK LINKS -->
+        <div>
+            <h3 class="col-heading">روابط سريعة</h3>
+            <ul class="link-list">
+                <li><a href="/pages/about/about.html"><span class="arr"><i class="fas fa-chevron-left"></i></span>عن الشركة</a></li>
+                <li><a href="/pages/articles/allarticles.html"><span class="arr"><i class="fas fa-chevron-left"></i></span>المقالات</a></li>
+                <li><a href="/pages/contact/contact.html"><span class="arr"><i class="fas fa-chevron-left"></i></span>اتصل بنا</a></li>
+            </ul>
+        </div>
+
+        <!-- COL 4 : CONTACT -->
+        <div>
+            <h3 class="col-heading">تواصل معنا</h3>
+            <div class="contact-card">
+
+                <div class="contact-row">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div class="contact-info">
+                        <span class="lbl">هاتف</span>
+                        <a href="tel:+201153480793" dir="ltr">+20 115 348 0793</a>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-info">
+                        <span class="lbl">البريد الإلكتروني</span>
+                        <a href="mailto:info@benaan.com">info@benaan.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-info">
+                        <span class="lbl">الموقع</span>
+                        <a href="https://www.google.com/maps?q=24.6408,46.7728" target="_blank" rel="noopener noreferrer">
+                            الرياض، المملكة العربية السعودية
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div><!-- /ft-grid -->
+
+    <!-- BOTTOM BAR -->
+    <div class="ft-bottom-wrap">
+        <div class="ft-bottom">
+            <p>© <span id="year"></span> شركة بنان — جميع الحقوق محفوظة.</p>
+            <div class="ft-badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>موثوق منذ 2020</span>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="../../js/floating-icons.js" defer></script>
+
 </body>
+</html>
