@@ -7,7 +7,6 @@ RewriteRule ^(.*)$ https://benaan.com/$1 [R=301,L]
 # ===============================
 # Case Fix Redirects
 # ===============================
-Redirect 301 /pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html https://benaan.com/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html
 Redirect 301 /pages/articles/What-is-data-analysis/What-is-data-analysis.html https://benaan.com/pages/articles/what-is-data-analysis/what-is-data-analysis.html
 
 # ===============================
@@ -23,12 +22,20 @@ Redirect 301 /pages/articles/data-cleaning-guide/data-cleaning-guide.html https:
 Redirect 301 /pages/services/Content%20writing.html https://benaan.com/pages/services/Content-writing.html
 
 # ===============================
-# Broken /allarticles.html/ URLs → Correct Articles
+# Typo Fix - sata → data
+# ===============================
+Redirect 301 /pages/articles/sata-analysis-companies-saudi/sata-analysis-companies-saudi.html https://benaan.com/pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html
+
+
+Redirect 301 /pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html https://benaan.com/pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html
+
+# ===============================
+# Broken /allarticles.html/ URLs → Correct Pages
 # ===============================
 Redirect 301 /pages/articles/allarticles.html/pages/articles/effective-training-package-design/effective-training-package-design.html https://benaan.com/pages/services/training-packages.html
 Redirect 301 /pages/articles/allarticles.html/pages/articles/importance-of-training-packages/importance-of-training-packages.html https://benaan.com/pages/services/training-packages.html
 Redirect 301 /pages/articles/allarticles.html/pages/articles/media-content-proofreading/media-content-proofreading.html https://benaan.com/pages/services/proofreading.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html https://benaan.com/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html
+Redirect 301 /pages/articles/allarticles.html/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html https://benaan.com/pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html
 Redirect 301 /pages/articles/allarticles.html/pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html https://benaan.com/pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html
 Redirect 301 /pages/articles/allarticles.html/pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html https://benaan.com/pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html
 Redirect 301 /pages/articles/allarticles.html/pages/articles/importance-of-certified-translation/importance-of-certified-translation.html https://benaan.com/pages/articles/importance-of-certified-translation/importance-of-certified-translation.html
