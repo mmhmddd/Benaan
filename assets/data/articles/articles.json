@@ -1,9 +1,65 @@
 [
   {
+  "title":"كتابة محتوى متوافق مع محركات البحث مع بنان",
+    "category": "التدقيق اللغوي",
+  "content": "كتابة محتوى متوافق مع محركات البحث لزيادة زيارات موقعك. تقدم شركة بنان استراتيجيات كتابة مقالات seo تضمن لك الصدارة." ,
+  "image": "/pages/articles/seo-content-writing/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/seo-content-writing/seo-content-writing.html"
+  },
+  {
+  "title":"خدمة كتابة مقال قانوني احترافي لمكاتب المحاماة والشركات",
+    "category": "التدقيق اللغوي",
+  "content": "تعلم كيفية كتابة مقال قانوني احترافي يجمع بين الدقة اللغوية والتأصيل الفقهي. تقدم شركة بنان خدمة كتابة تقرير قانوني بأسلوب رصين." ,
+  "image": "/pages/articles/legal-article/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/legal-article/legal-article.html"
+  },
+  {
+  "title":"خدمة إعادة صياغة النصوص باحترافية وجودة عالية",
+  "category": "التدقيق اللغوي",
+  "content": "يركز المقال الحالي على مفهوم إعادة صياغة النصوص باللغة العربية من بنان للبحوث العلمية والرسائل الأكاديمية، ودوره في تحسين جودة المحتوى الكتابي مع الحفاظ على المعنى. وتقدم بنان دليلًا شاملًا لمعرفة أهمية إعادة صياغة النصوص بالعربي.",
+  "image": "/pages/articles/text-paraphrasing/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/text-paraphrasing/text-paraphrasing.html"
+  },
+  {
+  "title":" خدمة مراجعة وتدقيق لغوي للنشر العلمي الدولي باحترافية",
+    "category": "التدقيق اللغوي",
+  "content": "إذا كنت تستهدف النشر في المجلات العلمية الدولية، فهذا المقال من بنان يستعرض أهمية المراجعة اللغوية والتدقيق اللغوي لدعم النشر الدولي.",
+  "image": "/pages/articles/scientific-publishing-proofreading/picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/scientific-publishing-proofreading/scientific-publishing-proofreading.html"
+  },
+  {
+  "title":"التدقيق النحوي واللغوي لبحوث الترقية باحترافية أكاديمية",
+    "category": "التدقيق اللغوي",
+  "content": "تسلط المقال الضوء على أهمية التدقيق النحوي واللغوي لبحوث الترقية لأعضاء هيئة التدريس، فـالـ Proofreading بمثابة أداة أساسية لتحسين جودة الكتابة الأكاديمية، ويرفع من قيمة بحوث الترقية العلمية باللغتين العربية والإنجليزية.",
+  "image": "/pages/articles/proofreading-promotion-research/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/proofreading-promotion-research/proofreading-promotion-research.html"
+  },
+  {
+  "title":"التدقيق اللغوي لمشاريع التخرج بإحترافية أكاديمية",
+    "category": "التدقيق اللغوي",
+  "content": "هل تبحث عن شركة للتدقيق اللغوي لمساعدتك في مشروع تخرجك؟ هل مشروع تخرجك بحاجة إلى تدقيق وتنقيح؟ بنان هي شريك الأمثل لمشروع تخرج خالي من الأخطاء اللغوية والإملائية.",
+  "image": "/pages/articles/proofreading-graduation-projects/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/proofreading-graduation-projects/proofreading-graduation-projects.html"
+  },
+  {
+  "title": "أخطاء لغوية شائعة في كتابة البحوث العلمية وكيف تتجنبها",
+  "category": "كتابة المحتوى",
+  "content": "تعرف على أبرز الأخطاء اللغوية الشائعة الى يقع فيها الباحثين عند كتابة البحوث العلمية والرسائل الأكاديمية وتقدم بنان دليلًا ارشاديًا لتجنب الوقوع في تلك الأخطاء اللغوية عند إعداد البحوث العلمية والرسائل الأكاديمية.",
+  "image": "/pages/articles/common-linguistic-errors/Picture1.jpg",
+  "link": "#",
+  "slug": "/pages/articles/common-linguistic-errors/common-linguistic-errors.html"
+  },
+  {
   "title": "أفضل شركة لكتابة بحوث دكتوراه",
   "category": "كتابة المحتوى",
   "content": "اكتشف أفضل شركة لكتابة بحوث دكتوراه لضمان جودة رسالتك العلمية. تقدم شركة بنان خدمة كتابة رسائل الدكتوراه باحترافية أكاديمية.",
-  "image": "/pages/articles/best-phd-thesis-writing/image1.jpg",
+  "image": "/pages/articles/best-phd-thesis-writing/Picture3.jpg",
   "link": "#",
   "slug": "/pages/articles/best-phd-thesis-writing/best-phd-thesis-writing.html"
   },
@@ -11,7 +67,7 @@
   "title": "أفضل مكاتب كتابة رسائل الماجستير",
   "category": "كتابة المحتوى",
   "content": "اكتشف أفضل مكاتب كتابة رسائل الماجستير لضمان جودة بحثك الأكاديمي. تقدم شركة بنان خدمة المساعدة في اعداد رسائل الماجستير باحترافية.",
-  "image": "/pages/articles/masters-thesis-writing/image3.png",
+  "image": "/pages/articles/masters-thesis-writing/Picture1.jpg",
   "link": "#",
   "slug": "/pages/articles/masters-thesis-writing/masters-thesis-writing.html"
   },
@@ -19,7 +75,7 @@
   "title": "افضل شركة لكتابة محتوى تسويقي إبداعي باحترافية",
   "category": "كتابة المحتوى",
   "content": "كتشف أسرار اختيار أفضل شركة لكتابة محتوى تسويقي إبداعي لنمو علامتك. تقدم بنان دليلاً حول طريقة كتابة محتوى تسويقي جذاب",
-  "image": "/pages/articles/best-marketing-content/image2.jpg",
+  "image": "/pages/articles/best-marketing-content/Picture1.jpg",
   "link": "#",
   "slug": "/pages/articles/best-marketing-content/best-marketing-content.html"
   },
