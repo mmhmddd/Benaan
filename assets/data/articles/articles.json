@@ -1,5 +1,76 @@
 [
   {
+    "title":"نسبة الذكاء الاصطناعي في النص وكيفية اكتشاف المحتوى غير البشري بدقة",
+    "category": "التدقيق اللغوي",
+    "content": "تعرف على نسبة الذكاء الاصطناعي في النص وكيفية اكتشاف المحتوى غير البشري بدقة. تقدم شركة بنان دليلاً شاملاً حول أدوات الكشف عن الذكاء الاصطناعي وتقنيات التحليل اللغوي لضمان جودة المحتوى.",
+    "image":"/pages/articles/ai-content-detection-and-ai-percentage/Picture1.jpg",
+    "link":"#",
+    "slug":"/pages/articles/ai-content-detection-and-ai-percentage/ai-content-detection-and-ai-percentage.html"
+  },
+  {
+    "title":"دليل شامل لبناء حقيبة متكاملة لبرامج تدريبية ناجحة",
+    "category": "حزم التدريب",
+    "content": "تعرف على كيفية بناء حقيبة متكاملة لبرامج تدريبية ناجحة. يشمل ذلك تحديد الأهداف، تنظيم المحتوى، واستخدام أساليب تدريبية مبتكرة لضمان تحقيق نتائج ملموسة وتعزيز مهارات المشاركين بشكل احترافي.",
+    "image": "/pages/articles/training-package-components-guide/Picture1.jpg",
+    "link": "#",
+    "slug": "/pages/articles/training-package-components-guide/training-package-components-guide.html"
+  },
+  
+  {
+    "title":"كتابة وصف المنتجات احترافي يزيد المبيعات",
+    "category" :"كتابة المحتوى",
+    "content":"احصل على خدمة كتابة وصف المنتجات الاحترافي لزيادة مبيعاتك. تقدم شركة بنان خدمات كتابة محتوى وصف المنتجات بدقة واحترافية عالية لتعزيز جاذبية منتجاتك وتحسين تجربة العملاء.",
+    "image": "/pages/articles/professional-product-description-writing/Picture1.jpg",
+    "link": "#",
+    "slug":"/pages/articles/professional-product-description-writing/professional-product-description-writing.html"
+
+  },
+  {
+    "title":"كتابة محتوى موقع إلكتروني احترافي مع بنان",
+    "category": "كتابة المحتوى",
+    "content": "احصل على خدمة كتابة محتوى موقع إلكتروني احترافي مع شركة بنان. نقدم محتوى إبداعي ومتوافق مع SEO يعزز ظهورك الرقمي ويجذب عملاءك المستهدفين بدقة ومصداقية.",
+    "image": "/pages/articles/professional-website-content-writing/Picture1.jpg",
+    "link": "#",
+    "slug": "/pages/articles/professional-website-content-writing/professional-website-content-writing.html"
+
+  },
+  {
+    "title":"خطوات تصميم الحقيبة التعليمية بطريقة تضمن نجاح التدريبي",
+    "category": "حزم التدريب",
+    "content": "تعرف على خطوات تصميم الحقيبة التعليمية بطريقة تضمن نجاح التدريبي. يشمل ذلك تحديد الأهداف، تنظيم المحتوى، واستخدام أساليب تدريبية مبتكرة لضمان تحقيق نتائج ملموسة وتعزيز مهارات المشاركين بشكل احترافي.",
+    "image": "/pages/articles/steps-to-design-training-package/Picture1.jpg",
+    "link": "#",
+    "slug": "/pages/articles/steps-to-design-training-package/steps-to-design-training-package.html"
+  },
+
+  {
+    "title":"خدمة كتابة مقالات طبية تبني ثقة وتزيد انتشارك",
+    "category": "كتابة المحتوى",  
+    "content": "احصل على خدمة كتابة مقالات طبية احترافية تعزز ثقة جمهورك وتزيد من انتشارك. تقدم شركة بنان خدمات كتابة المحتوى الطبي المتخصص بدقة واحترافية عالية.",
+    "image": "/pages/articles/medical-article-writing-service/Picture2.jpg",
+    "link": "#",
+    "slug": "/pages/articles/medical-article-writing-service/medical-article-writing-service.html"
+
+  },
+
+  {
+    "title":"أهمية الحقيبة التدريبية في نجاح البرامج التدريبية",
+    "category": "حزم التدريب",
+    "content": "تعتبر الحقيبة التدريبية من العناصر الأساسية لنجاح البرامج التدريبية، حيث توفر إطارًا منظمًا ومتكاملًا للمحتوى التدريبي. تساعد في توجيه المتدربين، تعزيز فهمهم، وتوفير الموارد اللازمة لتحقيق أهداف التدريب بكفاءة وفعالية.",
+    "image": "/pages/articles/importance-of-training-packages-in-training-program-success/Picture1.jpg",
+    "link": "#",
+    "slug": "/pages/articles/importance-of-training-packages-in-training-program-success/importance-of-training-packages-in-training-program-success.html"
+  },
+
+  {
+    "title":"الدليل الاحترافي لإعداد وتصميم حقائب تدريبية معتمدة",
+    "category": "حزم التدريب",
+    "content": "تعرف على كيفية إعداد وتصميم حقائب تدريبية معتمدة بفعالية. يشمل ذلك تحديد الأهداف، تنظيم المحتوى، واستخدام أساليب تدريبية مبتكرة لضمان تحقيق نتائج ملموسة وتعزيز مهارات المشاركين بشكل احترافي.",
+    "image": "/pages/articles/training-bag-preparation-guide/Picture1.jpg",
+    "link": "#",
+    "slug": "/pages/articles/training-bag-preparation-guide/training-bag-preparation-guide.html"
+  },
+  {
   "title":"كتابة محتوى متوافق مع محركات البحث مع بنان",
     "category": "التدقيق اللغوي",
   "content": "كتابة محتوى متوافق مع محركات البحث لزيادة زيارات موقعك. تقدم شركة بنان استراتيجيات كتابة مقالات seo تضمن لك الصدارة." ,
