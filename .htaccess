@@ -1,45 +1,141 @@
 RewriteEngine On
 
-# Redirect www to non-www
+# ===============================
+# Force HTTPS + www → non-www
+# ===============================
+RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\.benaan\.com [NC]
-RewriteRule ^(.*)$ https://benaan.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
 # ===============================
-# Case Fix Redirects
+# Homepage / Static Top-Level Pages
 # ===============================
-Redirect 301 /pages/articles/What-is-data-analysis/What-is-data-analysis.html https://benaan.com/pages/articles/what-is-data-analysis/what-is-data-analysis.html
+Redirect 301 /pages/about/about.html https://benaan.com/about/
+Redirect 301 /pages/contact/contact.html https://benaan.com/contact/
+Redirect 301 /contact https://benaan.com/contact/
+Redirect 301 /contact/contact.html https://benaan.com/contact/
+Redirect 301 /about/about.html https://benaan.com/about/
 
 # ===============================
-# Old/Wrong URLs → Correct Pages
+# Services Section
 # ===============================
-Redirect 301 /contact https://benaan.com/pages/contact/contact.html
-Redirect 301 /contact/contact.html https://benaan.com/pages/contact/contact.html
-Redirect 301 /about/about.html https://benaan.com/pages/about/about.html
-Redirect 301 /pages/articles/financial-analysis-company/financial-analysis-company.html https://benaan.com/pages/services/statistical-analysis.html
-Redirect 301 /pages/articles/statistical-hypothesis-testing/statistical-hypothesis-testing.html https://benaan.com/pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html
-Redirect 301 /pages/articles/spss-vs-r-python/spss-vs-r-python.html https://benaan.com/pages/articles/using-statistical-software-spss-r-python/using-statistical-software-spss-r-python.html
-Redirect 301 /pages/articles/data-cleaning-guide/data-cleaning-guide.html https://benaan.com/pages/articles/Methods-of-saving-data/Methods-of-saving-data.html
-Redirect 301 /pages/services/Content%20writing.html https://benaan.com/pages/services/Content-writing.html
+Redirect 301 /pages/services/allServices.html https://benaan.com/services/
+Redirect 301 /pages/services/statistical-analysis.html https://benaan.com/services/statistical-analysis/
+Redirect 301 /pages/services/translation.html https://benaan.com/services/translation/
+Redirect 301 /pages/services/training-packages.html https://benaan.com/services/training-packages/
+Redirect 301 /pages/services/proofreading.html https://benaan.com/services/proofreading/
+Redirect 301 /pages/services/Content-writing.html https://benaan.com/services/content-writing/
+RewriteRule ^pages/services/content[-\s%20]*writing\.html$ /services/content-writing/ [R=301,L,NC]
 
 # ===============================
-# Typo Fix - sata → data
+# Articles Index → Blog Index
 # ===============================
-Redirect 301 /pages/articles/sata-analysis-companies-saudi/sata-analysis-companies-saudi.html https://benaan.com/pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html
-
-
-Redirect 301 /pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html https://benaan.com/pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html
+Redirect 301 /pages/articles/allarticles.html https://benaan.com/blog/
 
 # ===============================
-# Broken /allarticles.html/ URLs → Correct Pages
+# Articles → Blog (Proofreading Topics)
 # ===============================
-Redirect 301 /pages/articles/allarticles.html/pages/articles/effective-training-package-design/effective-training-package-design.html https://benaan.com/pages/services/training-packages.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/importance-of-training-packages/importance-of-training-packages.html https://benaan.com/pages/services/training-packages.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/media-content-proofreading/media-content-proofreading.html https://benaan.com/pages/services/proofreading.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html https://benaan.com/pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html https://benaan.com/pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html https://benaan.com/pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/importance-of-certified-translation/importance-of-certified-translation.html https://benaan.com/pages/articles/importance-of-certified-translation/importance-of-certified-translation.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/translation-role-in-cultural-exchange/translation-role-in-cultural-exchange.html https://benaan.com/pages/articles/translation-role-in-cultural-exchange/translation-role-in-cultural-exchange.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/modern-proofreading-techniques/modern-proofreading-techniques.html https://benaan.com/pages/articles/modern-proofreading-techniques/modern-proofreading-techniques.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html https://benaan.com/pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html
-Redirect 301 /pages/articles/allarticles.html/pages/articles/designing-effective-training-packages/designing-effective-training-packages.html https://benaan.com/pages/articles/designing-effective-training-packages/designing-effective-training-packages.html
+Redirect 301 /pages/articles/academic-content-proofreading/academic-content-proofreading.html https://benaan.com/blog/academic-content-proofreading/
+Redirect 301 /pages/articles/advanced-proofreading-techniques/advanced-proofreading-techniques.html https://benaan.com/blog/advanced-proofreading-techniques/
+Redirect 301 /pages/articles/basics-of-proofreading/basics-of-proofreading.html https://benaan.com/blog/basics-of-proofreading/
+Redirect 301 /pages/articles/differences-editing-proofreading/differences-editing-proofreading.html https://benaan.com/blog/differences-editing-proofreading/
+Redirect 301 /pages/articles/media-content-proofreading/media-content-proofreading.html https://benaan.com/blog/media-content-proofreading/
+Redirect 301 /pages/articles/modern-proofreading-techniques/modern-proofreading-techniques.html https://benaan.com/blog/modern-proofreading-techniques/
+
+# ===============================
+# Articles → Blog (Statistical Analysis Topics)
+# ===============================
+Redirect 301 /pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html https://benaan.com/blog/basics-of-statistical-analysis/
+Redirect 301 /pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html https://benaan.com/blog/big-data-statistical-analysis/
+Redirect 301 /pages/articles/common-errors-in-statistical-analysis/common-errors-in-statistical-analysis.html https://benaan.com/blog/common-errors-in-statistical-analysis/
+Redirect 301 /pages/articles/statistical-analysis-in-strategic-decision-making/statistical-analysis-in-strategic-decision-making.html https://benaan.com/blog/statistical-analysis-in-strategic-decision-making/
+Redirect 301 /pages/articles/using-statistical-software-spss-r-python/using-statistical-software-spss-r-python.html https://benaan.com/blog/using-statistical-software-spss-r-python/
+Redirect 301 /pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html https://benaan.com/blog/multiple-regression-models-in-economic-studies/
+Redirect 301 /pages/articles/spss-vs-eviews/spss-vs-eviews.html https://benaan.com/blog/spss-vs-eviews/
+Redirect 301 /pages/articles/r-stats-step-by-step/r-stats-step-by-step.html https://benaan.com/blog/r-stats-step-by-step/
+Redirect 301 /pages/articles/data-analysis-using-SPSS-software/data-analysis-using-SPSS-software.html https://benaan.com/blog/data-analysis-using-spss-software/
+Redirect 301 /pages/articles/statistical-analysis-using-excel/statistical-analysis-using-excel.html https://benaan.com/blog/statistical-analysis-using-excel/
+Redirect 301 /pages/articles/eviews-statistical-analysis/eviews-statistical-analysis.html https://benaan.com/blog/eviews-statistical-analysis/
+Redirect 301 /pages/articles/banan-top-spss-analyst-in-saudi/banan-top-spss-analyst-in-saudi.html https://benaan.com/blog/banan-top-spss-analyst-in-saudi/
+
+# ===============================
+# Articles → Blog (Data Analysis Topics)
+# ===============================
+Redirect 301 /pages/articles/data-analysis/data-analysis.html https://benaan.com/blog/data-analysis/
+Redirect 301 /pages/articles/what-is-data-analysis/what-is-data-analysis.html https://benaan.com/blog/what-is-data-analysis/
+Redirect 301 /pages/articles/What-is-data-analysis/What-is-data-analysis.html https://benaan.com/blog/what-is-data-analysis/
+Redirect 301 /pages/articles/data-analytics-stats/data-analytics-stats.html https://benaan.com/blog/data-analytics-stats/
+Redirect 301 /pages/articles/data-visualization-techniques-best-practices/data-visualization-techniques-best-practices.html https://benaan.com/blog/data-visualization-techniques-best-practices/
+Redirect 301 /pages/articles/Methods-of-saving-data/Methods-of-saving-data.html https://benaan.com/blog/methods-of-saving-data/
+Redirect 301 /pages/articles/data-analysis-companies-egypt/data-analysis-companies-egypt.html https://benaan.com/blog/data-analysis-companies-egypt/
+Redirect 301 /pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html https://benaan.com/blog/data-analysis-companies-saudi/
+Redirect 301 /pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html https://benaan.com/blog/data-analysis-companies-saudi/
+Redirect 301 /pages/articles/sata-analysis-companies-saudi/sata-analysis-companies-saudi.html https://benaan.com/blog/data-analysis-companies-saudi/
+Redirect 301 /pages/articles/power-bi-data-analysis/power-bi-data-analysis.html https://benaan.com/blog/power-bi-data-analysis/
+
+# ===============================
+# Articles → Blog (Economic & Financial Analysis Topics)
+# ===============================
+Redirect 301 /pages/articles/economic-analysis/economic-analysis.html https://benaan.com/blog/economic-analysis/
+Redirect 301 /pages/articles/financial-analysis/financial-analysis.html https://benaan.com/blog/financial-analysis/
+Redirect 301 /pages/articles/stages-financial-analysis/stages-financial-analysis.html https://benaan.com/blog/stages-financial-analysis/
+Redirect 301 /pages/articles/profitability-ratios/profitability-ratios.html https://benaan.com/blog/profitability-ratios/
+Redirect 301 /pages/articles/tools-economic-analysis/tools-economic-analysis.html https://benaan.com/blog/tools-economic-analysis/
+Redirect 301 /pages/articles/financial-analysis-company/financial-analysis-company.html https://benaan.com/services/statistical-analysis/
+
+# ===============================
+# Articles → Blog (Translation Topics)
+# ===============================
+Redirect 301 /pages/articles/importance-of-certified-translation/importance-of-certified-translation.html https://benaan.com/blog/importance-of-certified-translation/
+Redirect 301 /pages/articles/legal-translation-challenges/legal-translation-challenges.html https://benaan.com/blog/legal-translation-challenges/
+Redirect 301 /pages/articles/literary-translation-strategies/literary-translation-strategies.html https://benaan.com/blog/literary-translation-strategies/
+Redirect 301 /pages/articles/machine-vs-human-translation/machine-vs-human-translation.html https://benaan.com/blog/machine-vs-human-translation/
+Redirect 301 /pages/articles/specialized-scientific-technical-translation/specialized-scientific-technical-translation.html https://benaan.com/blog/specialized-scientific-technical-translation/
+Redirect 301 /pages/articles/translation-role-in-cultural-exchange/translation-role-in-cultural-exchange.html https://benaan.com/blog/translation-role-in-cultural-exchange/
+
+# ===============================
+# Articles → Blog (Training Packages Topics)
+# ===============================
+Redirect 301 /pages/articles/customizing-training-for-industries/customizing-training-for-industries.html https://benaan.com/blog/customizing-training-for-industries/
+Redirect 301 /pages/articles/designing-effective-training-packages/designing-effective-training-packages.html https://benaan.com/blog/designing-effective-training-packages/
+Redirect 301 /pages/articles/effective-training-package-design/effective-training-package-design.html https://benaan.com/blog/effective-training-package-design/
+Redirect 301 /pages/articles/future-trends-in-corporate-training/future-trends-in-corporate-training.html https://benaan.com/blog/future-trends-in-corporate-training/
+Redirect 301 /pages/articles/importance-of-training-packages/importance-of-training-packages.html https://benaan.com/blog/importance-of-training-packages/
+Redirect 301 /pages/articles/measuring-training-roi/measuring-training-roi.html https://benaan.com/blog/measuring-training-roi/
+
+# ===============================
+# Articles → Blog (Content Writing Topics)
+# ===============================
+Redirect 301 /pages/articles/best-content-writing-egypt/best-content-writing-egypt.html https://benaan.com/blog/best-content-writing-egypt/
+Redirect 301 /pages/articles/content-writing-saudi/content-writing-saudi.html https://benaan.com/blog/content-writing-saudi/
+
+# ===============================
+# Old broken /allarticles.html nested paths
+# ===============================
+Redirect 301 /pages/articles/allarticles.html/pages/articles/effective-training-package-design/effective-training-package-design.html https://benaan.com/blog/effective-training-package-design/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/importance-of-training-packages/importance-of-training-packages.html https://benaan.com/blog/importance-of-training-packages/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/media-content-proofreading/media-content-proofreading.html https://benaan.com/blog/media-content-proofreading/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/Data-analysis-companies-saudi/Data-analysis-companies-saudi.html https://benaan.com/blog/data-analysis-companies-saudi/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html https://benaan.com/blog/multiple-regression-models-in-economic-studies/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html https://benaan.com/blog/big-data-statistical-analysis/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/importance-of-certified-translation/importance-of-certified-translation.html https://benaan.com/blog/importance-of-certified-translation/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/translation-role-in-cultural-exchange/translation-role-in-cultural-exchange.html https://benaan.com/blog/translation-role-in-cultural-exchange/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/modern-proofreading-techniques/modern-proofreading-techniques.html https://benaan.com/blog/modern-proofreading-techniques/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html https://benaan.com/blog/basics-of-statistical-analysis/
+Redirect 301 /pages/articles/allarticles.html/pages/articles/designing-effective-training-packages/designing-effective-training-packages.html https://benaan.com/blog/designing-effective-training-packages/
+
+# ===============================
+# Generic fallback: any remaining /pages/articles/<slug>/<slug>.html → /blog/<slug>/
+# (Catches any old article URL not explicitly listed above; lowercases via the
+#  rule itself is not possible in RewriteRule, so this assumes lowercase slugs.
+#  All explicit-case exceptions above are already handled and matched first.)
+# ===============================
+RewriteRule ^pages/articles/([a-z0-9-]+)/\1\.html$ /blog/$1/ [R=301,L,NC]
+
+# ===============================
+# Generic fallback: any remaining /pages/services/<slug>.html → /services/<slug>/
+# (excludes content-writing, which is handled above with a forced-lowercase target)
+# ===============================
+RewriteCond %{REQUEST_URI} !^/pages/services/[Cc]ontent[-]?writing\.html$
+RewriteRule ^pages/services/([a-zA-Z0-9-]+)\.html$ /services/$1/ [R=301,L,NC]

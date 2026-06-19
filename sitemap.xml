@@ -1,363 +1,468 @@
+<!-- #new sitemap -->
+
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- الصفحة الرئيسية -->
+  <!-- ══ الصفحات الرئيسية ══ -->
   <url>
     <loc>https://benaan.com/</loc>
-    <lastmod>2026-04-03</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
-
-  <!-- صفحات الخدمات -->
   <url>
-    <loc>https://benaan.com/pages/services/allServices.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <loc>https://benaan.com/about/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/services/statistical-analysis.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/services/translation.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/services/training-packages.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/services/proofreading.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/services/Content-writing.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <!-- صفحة التواصل -->
-  <url>
-    <loc>https://benaan.com/pages/contact/contact.html</loc>
-    <lastmod>2026-03-21</lastmod>
+    <loc>https://benaan.com/contact/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- صفحة عن الشركة -->
+  <!-- ══ الخدمات ══ -->
   <url>
-    <loc>https://benaan.com/pages/about/about.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://benaan.com/services/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/services/statistical-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/services/translation/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/services/training-packages/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/services/proofreading/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/services/content-writing/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
 
-  <!-- صفحة كل المقالات -->
+  <!-- ══ المدونة ══ -->
   <url>
-    <loc>https://benaan.com/pages/articles/allarticles.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- ========== المقالات ========== -->
-
-  <!-- تدقيق لغوي -->
+  <!-- ══ التدقيق اللغوي ══ -->
   <url>
-    <loc>https://benaan.com/pages/articles/academic-content-proofreading/academic-content-proofreading.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/academic-content-proofreading/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/advanced-proofreading-techniques/advanced-proofreading-techniques.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/advanced-proofreading-techniques/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/basics-of-proofreading/basics-of-proofreading.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/basics-of-proofreading/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/differences-editing-proofreading/differences-editing-proofreading.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/differences-editing-proofreading/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/media-content-proofreading/media-content-proofreading.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/media-content-proofreading/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/modern-proofreading-techniques/modern-proofreading-techniques.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <!-- تحليل إحصائي -->
-  <url>
-    <loc>https://benaan.com/pages/articles/basics-of-statistical-analysis/basics-of-statistical-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/modern-proofreading-techniques/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/big-data-statistical-analysis/big-data-statistical-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/ai-content-detection-and-ai-percentage/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/common-errors-in-statistical-analysis/common-errors-in-statistical-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/text-paraphrasing/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/statistical-analysis-in-strategic-decision-making/statistical-analysis-in-strategic-decision-making.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/scientific-publishing-proofreading/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/using-statistical-software-spss-r-python/using-statistical-software-spss-r-python.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/proofreading-promotion-research/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/multiple-regression-models-in-economic-studies/multiple-regression-models-in-economic-studies.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/spss-vs-eviews/spss-vs-eviews.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/r-stats-step-by-step/r-stats-step-by-step.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/data-analysis-using-SPSS-software/data-analysis-using-SPSS-software.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/statistical-analysis-using-excel/statistical-analysis-using-excel.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/eviews-statistical-analysis/eviews-statistical-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/proofreading-graduation-projects/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
-  <!-- تحليل البيانات -->
+  <!-- ══ التحليل الإحصائي ══ -->
   <url>
-    <loc>https://benaan.com/pages/articles/data-analysis/data-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/basics-of-statistical-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/what-is-data-analysis/what-is-data-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/big-data-statistical-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/data-analytics-stats/data-analytics-stats.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/common-errors-in-statistical-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/data-visualization-techniques-best-practices/data-visualization-techniques-best-practices.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/statistical-analysis-in-strategic-decision-making/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/Methods-of-saving-data/Methods-of-saving-data.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/using-statistical-software-spss-r-python/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/data-analysis-companies-egypt/data-analysis-companies-egypt.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/multiple-regression-models-in-economic-studies/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/data-analysis-companies-saudi/data-analysis-companies-saudi.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/spss-vs-eviews/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/power-bi-data-analysis/power-bi-data-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/r-stats-step-by-step/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/data-analysis-using-spss-software/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/statistical-analysis-using-excel/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/eviews-statistical-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/banan-top-spss-analyst-in-saudi/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- ══ تحليل البيانات ══ -->
+  <url>
+    <loc>https://benaan.com/blog/data-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/what-is-data-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/data-analytics-stats/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/data-visualization-techniques-best-practices/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/methods-of-saving-data/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/data-analysis-companies-egypt/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/data-analysis-companies-saudi/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/power-bi-data-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
-  <!-- التحليل الاقتصادي والمالي -->
+  <!-- ══ التحليل المالي والاقتصادي ══ -->
   <url>
-    <loc>https://benaan.com/pages/articles/economic-analysis/economic-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/economic-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/financial-analysis/financial-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/financial-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/stages-financial-analysis/stages-financial-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/stages-financial-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/profitability-ratios/profitability-ratios.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/profitability-ratios/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/tools-economic-analysis/tools-economic-analysis.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-
-  <!-- الترجمة -->
-  <url>
-    <loc>https://benaan.com/pages/articles/importance-of-certified-translation/importance-of-certified-translation.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/legal-translation-challenges/legal-translation-challenges.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/literary-translation-strategies/literary-translation-strategies.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/machine-vs-human-translation/machine-vs-human-translation.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/specialized-scientific-technical-translation/specialized-scientific-technical-translation.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://benaan.com/pages/articles/translation-role-in-cultural-exchange/translation-role-in-cultural-exchange.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/tools-economic-analysis/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
-  <!-- حزم التدريب -->
+  <!-- ══ الترجمة ══ -->
   <url>
-    <loc>https://benaan.com/pages/articles/customizing-training-for-industries/customizing-training-for-industries.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/importance-of-certified-translation/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/designing-effective-training-packages/designing-effective-training-packages.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/legal-translation-challenges/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/effective-training-package-design/effective-training-package-design.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/literary-translation-strategies/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/future-trends-in-corporate-training/future-trends-in-corporate-training.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/machine-vs-human-translation/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/importance-of-training-packages/importance-of-training-packages.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/specialized-scientific-technical-translation/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/measuring-training-roi/measuring-training-roi.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/translation-role-in-cultural-exchange/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 
-  <!-- مقالات خاصة) -->
+  <!-- ══ الحقائب التدريبية ══ -->
   <url>
-    <loc>https://benaan.com/pages/articles/banan-top-spss-analyst-in-saudi/banan-top-spss-analyst-in-saudi.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/customizing-training-for-industries/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/designing-effective-training-packages/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/effective-training-package-design/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/future-trends-in-corporate-training/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/importance-of-training-packages/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/measuring-training-roi/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/importance-of-training-packages-in-training-program-success/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/training-bag-preparation-guide/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/training-package-components-guide/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/steps-to-design-training-package/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- ══ كتابة المحتوى ══ -->
+  <url>
+    <loc>https://benaan.com/blog/best-content-writing-egypt/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/best-content-writing-egypt/best-content-writing-egypt.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/content-writing-saudi/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://benaan.com/pages/articles/content-writing-saudi/content-writing-saudi.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <loc>https://benaan.com/blog/best-marketing-content/</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/best-phd-thesis-writing/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/masters-thesis-writing/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/professional-product-description-writing/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/professional-website-content-writing/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/seo-content-writing/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/legal-article/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/medical-article-writing-service/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://benaan.com/blog/common-linguistic-errors/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
 
 </urlset>
